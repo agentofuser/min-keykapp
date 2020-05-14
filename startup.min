@@ -1,0 +1,5 @@
+(quote "tmux send-key -t0 '$1'" swap interpolate system)
+'k
+define
+
+("[$1]\nλ " (. "^/Users/hsribei" "~" replace) => %) 'prompt bind
