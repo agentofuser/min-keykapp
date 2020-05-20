@@ -49,7 +49,7 @@ homedir ".local/src/github.com/agentofuser/minkeykapp/" ja 'kkd define
 
 ("nvim" kks js sp) 'vm define
 
-(. kkd cd "git add . && git commit -m 'unattended' && git push" sp cd) 'um define
+(. kkd cd "git add . && git commit -m 'unattended' && git push && git diff --color HEAD~1 | less -R" sp cd) 'um define
 
 
 (kks fread eval "##! keykapp reloaded !##" println!) 'sm define
