@@ -30,3 +30,9 @@ define
 
 ; call macos open command
 ("open " jp sp) 'o define
+
+("/Applications/" jp ".app" ja o) 'oa define
+
+
+; "fuck-yeah": move todo item to done
+("ddGp:w" k  "Enter" k "C-o" k) 'fy define
