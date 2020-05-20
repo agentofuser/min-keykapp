@@ -2,4 +2,21 @@
 'k
 define
 
+
 ("\n[----\nstack:\n" print! get-stack print! "\n]----\n" print! "\n[$1]\nλ " (. "^/Users/hsribei" "~" replace) => %) 'prompt bind
+
+
+(quote "\n" swap append "" join print) 'println define
+(println pop) 'println! define
+
+
+("\n[---- shell output:\n" println! system pop "\n]---- shell output.\n" println!) 'sp define
+
+
+(clear-stack) 'cs define
+(pop) 'd define
+
+
+("/usr/sbin/networksetup -setairportpower en0 off" sp) 'wfj define
+("/usr/sbin/networksetup -setairportpower en0 on" sp) 'wfk define
+
