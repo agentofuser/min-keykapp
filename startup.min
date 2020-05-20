@@ -2,4 +2,4 @@
 'k
 define
 
-("[$1]\nλ " (. "^/Users/hsribei" "~" replace) => %) 'prompt bind
+("\n[----\nstack:\n" print! get-stack print! "\n]----\n" print! "\n[$1]\nλ " (. "^/Users/hsribei" "~" replace) => %) 'prompt bind
