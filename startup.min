@@ -51,3 +51,5 @@ homedir ".local/src/github.com/agentofuser/minkeykapp/" ja 'kkd define
 
 (kks fread eval "##! keykapp reloaded !##" println!) 'sm define
 
+
+
