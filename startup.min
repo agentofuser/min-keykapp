@@ -3,7 +3,7 @@
 define
 
 
-("\n[----\nstack:\n" print! get-stack print! "\n]----\n" print! "\n[$1]\nλ " (. "^/Users/hsribei" "~" replace) => %) 'prompt bind
+("\n[----\nstack:\n" print! get-stack print! "\n]----\n" print! "\n--------------------------------\n[$1]\nλ " (. "^/Users/hsribei" "~" replace) => %) 'prompt bind
 
 
 (quote "\n" swap append "" join print) 'println define
@@ -27,6 +27,8 @@ define
 ; prepend string 2 to 1
 (swap quote prepend "" join) 'jp define
 
+; join two strings with a space
+(quote prepend " " join) 'js define
 
 ; call macos open command
 ("open " jp sp) 'o define
@@ -36,3 +38,16 @@ define
 
 ; "fuck-yeah": move todo item to done
 ("ddGp:w" k  "Enter" k "C-o" k) 'fy define
+
+
+"/Users/hsribei/" 'homedir define
+homedir 'hd define
+
+homedir ".local/src/github.com/agentofuser/minkeykapp/" ja 'kkd define
+
+(kkd "startup.min" ja) 'kks define
+
+("nvim" kks js sp) 'vm define
+
+(kks fread eval "##! keykapp reloaded !##" println!) 'sm define
+
