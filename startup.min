@@ -51,5 +51,4 @@ homedir ".local/src/github.com/agentofuser/minkeykapp/" ja 'kkd define
 
 (kks fread eval "##! keykapp reloaded !##" println!) 'sm define
 
-
-
+(kkd cd "git add . && git commit -m 'unattended' && git push" sp) 'um define
