@@ -20,3 +20,13 @@ define
 ("/usr/sbin/networksetup -setairportpower en0 off" sp) 'wfj define
 ("/usr/sbin/networksetup -setairportpower en0 on" sp) 'wfk define
 
+
+; append string 2 to 1
+(swap quote append "" join) 'ja define
+
+; prepend string 2 to 1
+(swap quote prepend "" join) 'jp define
+
+
+; call macos open command
+("open " jp sp) 'o define
