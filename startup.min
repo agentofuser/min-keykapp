@@ -1,4 +1,4 @@
-(quote "tmux send-key -t0 '$1'" swap interpolate system)
+(quote "tmux send-key -t0 '$1'" swap interpolate system pop)
 'k
 define
 
