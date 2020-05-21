@@ -1,6 +1,18 @@
-(quote "tmux send-key -t0 '$1'" swap interpolate system pop)
-'k
-define
+; HACK: next two lines have to be identical except for
+; the last word: "define" on first line, "bind" on
+; second. This is so that we can set up 'redefine
+; to update symbol definitions when sourcing this
+; file from the repl.
+; (swap over quote-define dup "($1)" swap quote interpolate eval source dequote swap "($1)" swap quote interpolate eval bind) 'string-bind-or-define define
+; (swap over quote-define dup "($1)" swap quote interpolate eval source dequote swap "($1)" swap quote interpolate eval bind) 'string-bind-or-define bind
+
+; (string-bind-or-define) 'redefine define
+; (quote-define) 'redefine define
+
+
+(quote "tmux send-key -t0 '$1'" swap interpolate system pop) 'k define
+
+(quote prepend "tmux send-key -t$1 '$2'" swap interpolate sp) 'pk define
 
 
 ("\n[----\nstack:\n" print! get-stack print! "\n]----\n" print! "\n--------------------------------\n[$1]\nλ " (. "^/Users/hsribei" "~" replace) => %) 'prompt bind
@@ -40,16 +52,33 @@ define
 ("ddGp:w" k  "Enter" k "C-o" k) 'fy define
 
 
-"/Users/hsribei/" 'homedir define
-homedir 'hd define
+'HOME get-env "/" ja 'homedir define
+(homedir) 'hd define
 
-homedir ".local/src/github.com/agentofuser/minkeykapp/" ja 'kkd define
+(homedir ".local/src/github.com/agentofuser/minkeykapp/" ja) 'kkd define
 
 (kkd "startup.min" ja) 'kks define
 
+("nvim" swap js sp) 'v define
 ("nvim" kks js sp) 'vm define
 
-(. kkd cd "git add . && git commit -m 'unattended' && git push && echo 'the following changes were pushed:' && git diff --color HEAD~1 | less -R" sp cd) 'um bind
+(. kkd cd "git add . && git commit -m 'unattended' && git push && echo 'the following changes were pushed:' && git diff --color HEAD~1 | less -R" sp cd) 'um define
 
 
 (kks fread eval "##! keykapp reloaded !##" println!) 'sm define
+
+
+("mpv '$1'" swap quote interpolate sp) 'mpv define
+
+
+; import all stored symbols from .min_symbols
+kkd
+".min_symbols"
+ja
+fread
+from-json
+'keykapp
+module
+'keykapp
+import
+

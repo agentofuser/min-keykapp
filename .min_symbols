@@ -1,0 +1,57 @@
+{
+  "minutes-to-miliseconds": [
+    1000,
+    60,
+    ";sym:*",
+    ";sym:*"
+  ],
+  "min": [
+    ";sym:minutes-to-miliseconds"
+  ],
+  "w": [
+    "ddGp:w",
+    ";sym:k",
+    "Enter",
+    ";sym:k",
+    "C-o",
+    ";sym:k"
+  ],
+  "k": [
+    ";sym:quote",
+    "tmux send-key -t0 '$1'",
+    ";sym:swap",
+    ";sym:interpolate",
+    ";sym:system",
+    ";sym:pop"
+  ],
+  "s": [
+    ";sym:source"
+  ],
+  "to-str": [
+    "$1",
+    ";sym:swap",
+    ";sym:interpolate"
+  ],
+  "to-sym": [
+    "($1)",
+    ";sym:swap",
+    ";sym:quote",
+    ";sym:interpolate",
+    ";sym:eval"
+  ],
+  "symbols-filter": [
+    ";sym:to-str",
+    ";sym:'match",
+    ";sym:prepend",
+    ";sym:symbols",
+    ";sym:swap",
+    ";sym:filter",
+    [
+      ";sym:to-sym"
+    ],
+    ";sym:map"
+  ],
+  "sf": [
+    ";sym:symbols-filter"
+  ]
+}
