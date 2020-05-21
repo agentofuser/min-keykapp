@@ -53,5 +53,13 @@
   ],
   "sf": [
     ";sym:symbols-filter"
+  ],
+  "hb": [
+    "hub browse",
+    ";sym:sp"
+  ],
+  "chd": [
+    ";sym:hd",
+    ";sym:cd"
   ]
 }
