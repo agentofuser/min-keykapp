@@ -69,5 +69,9 @@
   "z": [
     "zsh",
     ";sym:sp"
+  ],
+  "l": [
+    "exa -la",
+    ";sym:sp"
   ]
 }
