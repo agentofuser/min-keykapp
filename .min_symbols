@@ -122,8 +122,12 @@
     ";sym:kkd",
     ";sym:cd",
     ";sym:gcu",
-    "git push",
-    ";sym:sp",
+    [
+      "git push",
+      ";sym:sp"
+    ],
+    ";sym:wfd",
+    ";sym:gdl",
     ";sym:cd"
   ],
   "wfd": [
