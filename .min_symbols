@@ -65,5 +65,9 @@
   "gpu": [
     "git add . && git commit -m 'unattended' && git push && echo 'the following changes were pushed:' && git diff --color HEAD~1 | less -R",
     ";sym:sp"
+  ],
+  "z": [
+    "zsh",
+    ";sym:sp"
   ]
 }
