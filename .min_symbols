@@ -73,5 +73,9 @@
   "l": [
     "exa -la",
     ";sym:sp"
+  ],
+  "cl": [
+    ";sym:c",
+    ";sym:l"
   ]
 }
