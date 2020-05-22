@@ -125,5 +125,14 @@
     "git push",
     ";sym:sp",
     ";sym:cd"
+  ],
+  "wfd": [
+    ";sym:wfk",
+    1000,
+    4,
+    ";sym:*",
+    ";sym:sleep",
+    ";sym:dequote",
+    ";sym:wfj"
   ]
 }
