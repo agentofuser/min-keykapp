@@ -111,8 +111,7 @@
   ],
   "gcu": [
     "git add . && git commit -m 'unattended'",
-    ";sym:sp",
-    ";sym:gdl"
+    ";sym:sp"
   ],
   "gdl": [
     "git diff --color HEAD~1 | less -R",
