@@ -71,11 +71,60 @@
     ";sym:sp"
   ],
   "l": [
+    ";sym:pwd",
     "exa -la",
     ";sym:sp"
   ],
   "cl": [
     ";sym:c",
     ";sym:l"
+  ],
+  "c": [
+    ";sym:.",
+    ";sym:swap",
+    ";sym:cd"
+  ],
+  "ck": [
+    ";sym:..",
+    ";sym:cl"
+  ],
+  "kkh": [
+    ";sym:homedir",
+    ".min_history",
+    ";sym:ja"
+  ],
+  "vh": [
+    ";sym:kkh",
+    ";sym:v"
+  ],
+  "ckk": [
+    ";sym:'ck",
+    3,
+    ";sym:times"
+  ],
+  "pwd": [
+    ";sym:.",
+    ";sym:println!"
+  ],
+  "wdef": [
+    "swap over define dup save-symbol source println!"
+  ],
+  "gcu": [
+    "git add . && git commit -m 'unattended'",
+    ";sym:sp",
+    ";sym:gdl"
+  ],
+  "gdl": [
+    "git diff --color HEAD~1 | less -R",
+    ";sym:sp"
+  ],
+  "wkk": [
+    ";sym:.",
+    ";sym:kkd",
+    ";sym:cd",
+    ";sym:gcu",
+    "git push",
+    ";sym:sp",
+    ";sym:cd"
   ]
 }
