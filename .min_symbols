@@ -159,5 +159,16 @@
     ";sym:quote",
     ";sym:interpolate",
     ";sym:sp"
+  ],
+  "wft": [
+    [
+      1000,
+      60,
+      ";sym:*",
+      ";sym:*",
+      ";sym:sleep"
+    ],
+    ";sym:prepend",
+    ";sym:wfd"
   ]
 }
