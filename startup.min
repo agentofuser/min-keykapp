@@ -57,14 +57,13 @@
 
 (homedir ".local/src/github.com/agentofuser/minkeykapp/" ja) 'kkd define
 
-(kkd "startup.min" ja) 'kks define
+(kkd "startup.min" ja) 'kkb define
 
 ("nvim" swap js sp) 'v define
-("nvim" kks js sp) 'vm define
+("nvim" kkb js sp) 'vm define
 
 
-
-(kks fread eval "##! keykapp reloaded !##" println!) 'sm define
+(kkb fread eval "##! keykapp reloaded !##" println!) 'sm define
 
 
 ("mpv '$1'" swap quote interpolate sp) 'mpv define

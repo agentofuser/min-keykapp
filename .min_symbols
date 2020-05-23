@@ -138,5 +138,19 @@
     ";sym:sleep",
     ";sym:dequote",
     ";sym:wfj"
+  ],
+  "kks": [
+    ";sym:hd",
+    ".min_symbols",
+    ";sym:ja"
+  ],
+  "vs": [
+    ";sym:kks",
+    ";sym:v"
+  ],
+  "a": [
+    ";sym:kks",
+    ";sym:fread",
+    ";sym:from-json"
   ]
 }
