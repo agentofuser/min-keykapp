@@ -152,5 +152,12 @@
     ";sym:kks",
     ";sym:fread",
     ";sym:from-json"
+  ],
+  "psg": [
+    "ps aux | grep -v grep | grep --color '$1'",
+    ";sym:swap",
+    ";sym:quote",
+    ";sym:interpolate",
+    ";sym:sp"
   ]
 }
