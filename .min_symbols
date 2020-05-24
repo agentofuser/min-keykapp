@@ -170,5 +170,24 @@
     ],
     ";sym:prepend",
     ";sym:wfd"
+  ],
+  "du": [
+    "du -chs",
+    ";sym:sp"
+  ],
+  "sh": [
+    ";sym:sp"
+  ],
+  "ydla": [
+    "youtube-dl -i --no-playlist --download-archive youtube-dl-archive.txt --write-info-json --write-description --write-annotations --write-all-thumbnails --embed-thumbnail --add-metadata --xattrs --restrict-filenames -v --extract-audio --audio-format mp3 --audio-quality 0"
+  ],
+  "dla": [
+    ";sym:ydla",
+    ";sym:quote",
+    ";sym:append",
+    "$1 '$2'",
+    ";sym:swap",
+    ";sym:interpolate",
+    ";sym:sp"
   ]
 }
