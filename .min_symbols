@@ -189,5 +189,9 @@
     ";sym:swap",
     ";sym:interpolate",
     ";sym:sp"
+  ],
+  "gl": [
+    "git log --stat",
+    ";sym:sh"
   ]
 }
