@@ -244,5 +244,26 @@
       ";sym:if"
     ],
     ";sym:reduce"
+  ],
+  "to-pairs": [
+    ";sym:'__dict",
+    ";sym:bind",
+    ";sym:__dict",
+    ";sym:dkeys",
+    [
+      ";sym:'_key",
+      ";sym:define",
+      ";sym:__dict",
+      ";sym:_key",
+      ";sym:dget",
+      ";sym:'_value",
+      ";sym:define",
+      ";sym:_key",
+      ";sym:quote",
+      ";sym:_value",
+      ";sym:swap",
+      ";sym:prepend"
+    ],
+    ";sym:map"
   ]
 }
