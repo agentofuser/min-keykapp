@@ -211,5 +211,38 @@
     ";sym:fread",
     "\n",
     ";sym:split"
+  ],
+  "rhcounts": [
+    ";sym:rhlines",
+    {},
+    [
+      ";sym:'line",
+      ";sym:define",
+      ";sym:'histogram",
+      ";sym:define",
+      [
+        ";sym:histogram",
+        ";sym:line",
+        ";sym:dhas?"
+      ],
+      [
+        ";sym:histogram",
+        ";sym:line",
+        ";sym:dget",
+        ";sym:succ",
+        ";sym:histogram",
+        ";sym:swap",
+        ";sym:line",
+        ";sym:dset"
+      ],
+      [
+        ";sym:histogram",
+        1,
+        ";sym:line",
+        ";sym:dset"
+      ],
+      ";sym:if"
+    ],
+    ";sym:reduce"
   ]
 }
