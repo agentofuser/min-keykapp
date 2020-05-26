@@ -193,5 +193,23 @@
   "gl": [
     "git log --stat",
     ";sym:sh"
+  ],
+  "ydlv": [
+    "youtube-dl -i --no-playlist --download-archive youtube-dl-archive.txt --write-info-json --write-description --write-annotations --write-all-thumbnails -v --prefer-free-formats --all-subs --add-metadata --xattrs --restrict-filenames"
+  ],
+  "dlv": [
+    ";sym:ydlv",
+    ";sym:quote",
+    ";sym:append",
+    "$1 '$2'",
+    ";sym:swap",
+    ";sym:interpolate",
+    ";sym:sh"
+  ],
+  "rhlines": [
+    ";sym:kkh",
+    ";sym:fread",
+    "\n",
+    ";sym:split"
   ]
 }
