@@ -265,5 +265,25 @@
       ";sym:prepend"
     ],
     ";sym:map"
+  ],
+  "frequent-kapps": [
+    ";sym:rhcounts",
+    ";sym:to-pairs",
+    [
+      ";sym:first",
+      ";sym:swap",
+      ";sym:first",
+      ";sym:>"
+    ],
+    ";sym:sort"
+  ],
+  "pplabel": [
+    ";sym:to-str",
+    ": $1",
+    ";sym:ja",
+    ";sym:over",
+    ";sym:quote",
+    ";sym:interpolate",
+    ";sym:println!"
   ]
 }
