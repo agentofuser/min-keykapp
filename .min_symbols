@@ -60,7 +60,7 @@
   ],
   "chd": [
     ";sym:hd",
-    ";sym:cd"
+    ";sym:c"
   ],
   "gpu": [
     "git add . && git commit -m 'unattended' && git push && echo 'the following changes were pushed:' && git diff --color HEAD~1 | less -R",
@@ -285,5 +285,31 @@
     ";sym:quote",
     ";sym:interpolate",
     ";sym:println!"
+  ],
+  "msleep": [
+    ";sym:min",
+    ";sym:sleep"
+  ],
+  "kkh-tail": [
+    ";sym:kkh",
+    "tail -F",
+    ";sym:swap",
+    ";sym:js",
+    ";sym:sh"
+  ],
+  "fd": [
+    ";sym:quote",
+    "fd '$1'",
+    ";sym:swap",
+    ";sym:interpolate",
+    ";sym:sh"
+  ],
+  "df": [
+    "df -h",
+    ";sym:sh"
+  ],
+  "kk": [
+    ";sym:to-str",
+    ";sym:k"
   ]
 }

@@ -36,11 +36,17 @@
 ; append string 2 to 1
 (swap quote append "" join) 'ja define
 
+; append slash
+("/" ja) 'jal define
+
 ; prepend string 2 to 1
 (swap quote prepend "" join) 'jp define
 
 ; join two strings with a space
 (quote prepend " " join) 'js define
+
+; join two strings with a slash
+(quote prepend "/" join) 'jl define
 
 ; call macos open command
 ("open " jp sp) 'o define
