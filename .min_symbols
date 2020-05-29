@@ -311,5 +311,26 @@
   "kk": [
     ";sym:to-str",
     ";sym:k"
+  ],
+  "cmus-pause-toggle": [
+    ";sym:'c",
+    ";sym:kk"
+  ],
+  "cmus-pause-toggle-after-minutes": [
+    ";sym:msleep",
+    ";sym:cmus-pause-toggle"
+  ],
+  "wc": [
+    ";sym:'yyp",
+    ";sym:kk",
+    ";sym:w"
+  ],
+  "mpv-pause-toggle": [
+    ";sym:'Space",
+    ";sym:kk"
+  ],
+  "mpv-pause-toggle-after-minutes": [
+    ";sym:msleep",
+    ";sym:mpv-pause-toggle"
   ]
 }
