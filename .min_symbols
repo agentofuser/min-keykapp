@@ -90,7 +90,7 @@
   ],
   "kkh": [
     ";sym:homedir",
-    ".min_history",
+    ".min_full_history",
     ";sym:ja"
   ],
   "vh": [
@@ -122,11 +122,7 @@
     ";sym:kkd",
     ";sym:cd",
     ";sym:gcu",
-    [
-      "git push",
-      ";sym:sp"
-    ],
-    ";sym:wfd",
+    ";sym:gp",
     ";sym:gdl",
     ";sym:cd"
   ],
@@ -332,5 +328,40 @@
   "mpv-pause-toggle-after-minutes": [
     ";sym:msleep",
     ";sym:mpv-pause-toggle"
+  ],
+  "gs": [
+    "git status",
+    ";sym:sh"
+  ],
+  "gp": [
+    "git push",
+    ";sym:sh"
+  ],
+  "fuzzify": [
+    "",
+    ";sym:split",
+    ".*",
+    ";sym:join",
+    ".*",
+    ";sym:jp",
+    ".*",
+    ";sym:ja"
+  ],
+  "kapps-filter": [
+    ";sym:'query",
+    ";sym:define",
+    [
+      ";sym:last",
+      ";sym:query",
+      ";sym:match"
+    ],
+    ";sym:filter"
+  ],
+  "kf": [
+    ";sym:to-str",
+    ";sym:fuzzify",
+    ";sym:frequent-kapps",
+    ";sym:swap",
+    ";sym:kapps-filter"
   ]
 }
