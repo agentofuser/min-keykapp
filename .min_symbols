@@ -364,7 +364,22 @@
     ";sym:swap",
     ";sym:kapps-filter",
     10,
-    ";sym:take"
+    ";sym:take",
+    0,
+    ";sym:'kfi",
+    ";sym:define",
+    [
+      ";sym:last",
+      ";sym:quote",
+      ";sym:kfi",
+      ";sym:swap",
+      ";sym:prepend",
+      ";sym:kfi",
+      ";sym:succ",
+      ";sym:'kfi",
+      ";sym:bind"
+    ],
+    ";sym:map"
   ],
   "mcl": [
     ";sym:dup",
@@ -374,6 +389,15 @@
   "ek": [
     ";sym:get",
     ";sym:last",
+    ";sym:dup",
+    "\n",
+    ";sym:ja",
+    ";sym:kkh",
+    ";sym:fappend",
     ";sym:eval"
+  ],
+  "jf": [
+    ";sym:'kf",
+    ";sym:kf"
   ]
 }
