@@ -363,5 +363,10 @@
     ";sym:frequent-kapps",
     ";sym:swap",
     ";sym:kapps-filter"
+  ],
+  "mcl": [
+    ";sym:dup",
+    ";sym:mkdir",
+    ";sym:cl"
   ]
 }
