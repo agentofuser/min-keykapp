@@ -99,7 +99,7 @@
   ],
   "ckk": [
     ";sym:'ck",
-    3,
+    2,
     ";sym:times"
   ],
   "pwd": [
@@ -362,11 +362,18 @@
     ";sym:fuzzify",
     ";sym:frequent-kapps",
     ";sym:swap",
-    ";sym:kapps-filter"
+    ";sym:kapps-filter",
+    10,
+    ";sym:take"
   ],
   "mcl": [
     ";sym:dup",
     ";sym:mkdir",
     ";sym:cl"
+  ],
+  "ek": [
+    ";sym:get",
+    ";sym:last",
+    ";sym:eval"
   ]
 }
