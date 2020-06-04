@@ -363,7 +363,7 @@
     ";sym:frequent-kapps",
     ";sym:swap",
     ";sym:kapps-filter",
-    10,
+    8,
     ";sym:take",
     0,
     ";sym:'kfi",
@@ -399,5 +399,11 @@
   "jf": [
     ";sym:'kf",
     ";sym:kf"
+  ],
+  "jad": [
+    "yarn add --dev",
+    ";sym:swap",
+    ";sym:js",
+    ";sym:sh"
   ]
 }
