@@ -317,9 +317,15 @@
     ";sym:cmus-pause-toggle"
   ],
   "wc": [
-    ";sym:'yyp",
-    ";sym:kk",
-    ";sym:w"
+    [
+      ";sym:'ddkPjmSGp",
+      ";sym:'C-o",
+      ";sym:'mSj",
+      ";sym:':w",
+      ";sym:'Enter"
+    ],
+    ";sym:'kk",
+    ";sym:foreach"
   ],
   "mpv-pause-toggle": [
     ";sym:'Space",
@@ -402,6 +408,39 @@
   ],
   "jad": [
     "yarn add --dev",
+    ";sym:swap",
+    ";sym:js",
+    ";sym:sh"
+  ],
+  "r": [
+    ";sym:to-str",
+    ";sym:sh"
+  ],
+  "wrap-in-single-quotes": [
+    [
+      ";sym:quote",
+      "'$1'",
+      ";sym:swap",
+      ";sym:interpolate"
+    ],
+    ";sym:map"
+  ],
+  "cfsaude-link-new": [
+    ";sym:quote",
+    ";sym:prepend",
+    ";sym:wrap-in-single-quotes",
+    ";sym:dequote",
+    ";sym:js",
+    "node ~/.local/src/github.com/agentofuser/cfsau.de/node_modules/.bin/netlify-shortener",
+    ";sym:swap",
+    ";sym:js",
+    ";sym:sh"
+  ],
+  "say": [
+    ";sym:quote",
+    ";sym:wrap-in-single-quotes",
+    ";sym:dequote",
+    "say",
     ";sym:swap",
     ";sym:js",
     ";sym:sh"
