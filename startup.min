@@ -88,3 +88,7 @@ import
 
 ; FIXME turn to-pairs into a reduce to stop relying on bind
 rhcounts '__dict define
+
+
+; keep result of last 'kf run (frequent kapp fuzzy filter)
+() 'temp-kf-last-result define

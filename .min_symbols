@@ -9,12 +9,7 @@
     ";sym:minutes-to-miliseconds"
   ],
   "w": [
-    "ddGp:w",
-    ";sym:k",
-    "Enter",
-    ";sym:k",
-    "C-o",
-    ";sym:k"
+    ";sym:quote"
   ],
   "k": [
     ";sym:quote",
@@ -385,7 +380,17 @@
       ";sym:'kfi",
       ";sym:bind"
     ],
-    ";sym:map"
+    ";sym:map",
+    ";sym:quote",
+    [
+      ";sym:temp-kf-last-result"
+    ],
+    ";sym:bind",
+    ";sym:temp-kf-last-result",
+    [
+      ";sym:println!"
+    ],
+    ";sym:foreach"
   ],
   "mcl": [
     ";sym:dup",
@@ -393,6 +398,8 @@
     ";sym:cl"
   ],
   "ek": [
+    ";sym:temp-kf-last-result",
+    ";sym:swap",
     ";sym:get",
     ";sym:last",
     ";sym:dup",
@@ -444,5 +451,38 @@
     ";sym:swap",
     ";sym:js",
     ";sym:sh"
+  ],
+  "hsrst-link-new": [
+    ";sym:quote",
+    ";sym:prepend",
+    ";sym:wrap-in-single-quotes",
+    ";sym:dequote",
+    ";sym:js",
+    "node ~/.local/src/github.com/agentofuser/hsr.st/node_modules/.bin/netlify-shortener",
+    ";sym:swap",
+    ";sym:js",
+    ";sym:sh"
+  ],
+  "ak": [
+    ";sym:temp-kf-last-result",
+    ";sym:swap",
+    ";sym:get",
+    ";sym:last",
+    ";sym:dup",
+    "\n",
+    ";sym:ja",
+    ";sym:kkh",
+    ";sym:fappend",
+    ";sym:parse"
+  ],
+  "u": [
+    ";sym:dequote"
+  ],
+  "lkf": [
+    ";sym:temp-kf-last-result",
+    [
+      ";sym:println!"
+    ],
+    ";sym:foreach"
   ]
 }
