@@ -484,5 +484,8 @@
       ";sym:println!"
     ],
     ";sym:foreach"
+  ],
+  "fl": [
+    ";sym:swap"
   ]
 }
