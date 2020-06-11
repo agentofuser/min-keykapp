@@ -1,556 +1,569 @@
 {
-  "minutes-to-miliseconds": [
-    1000,
-    60,
-    ";sym:*",
-    ";sym:*"
-  ],
-  "min": [
-    ";sym:minutes-to-miliseconds"
-  ],
-  "w": [
-    ";sym:quote"
-  ],
-  "k": [
-    ";sym:quote",
+    "minutes-to-miliseconds": [
+        1000,
+        60,
+        ";sym:*",
+        ";sym:*"
+    ],
+    "min": [
+        ";sym:minutes-to-miliseconds"
+    ],
+    "w": [
+        ";sym:quote"
+    ],
+    "k": [
+        ";sym:quote",
     "tmux send-key -t0 '$1'",
     ";sym:swap",
     ";sym:interpolate",
     ";sym:system",
     ";sym:pop"
-  ],
-  "s": [
-    ";sym:source"
-  ],
-  "to-str": [
-    "$1",
+    ],
+    "s": [
+        ";sym:source"
+    ],
+    "to-str": [
+        "$1",
     ";sym:swap",
     ";sym:interpolate"
-  ],
-  "to-sym": [
-    "($1)",
+    ],
+    "to-sym": [
+        "($1)",
     ";sym:swap",
     ";sym:quote",
     ";sym:interpolate",
     ";sym:eval"
-  ],
-  "symbols-filter": [
-    ";sym:to-str",
+    ],
+    "symbols-filter": [
+        ";sym:to-str",
     ";sym:'match",
     ";sym:prepend",
     ";sym:symbols",
     ";sym:swap",
     ";sym:filter",
     [
-      ";sym:to-sym"
+        ";sym:to-sym"
     ],
     ";sym:map"
-  ],
-  "sf": [
-    ";sym:symbols-filter"
-  ],
-  "hb": [
-    "hub browse",
+    ],
+    "sf": [
+        ";sym:symbols-filter"
+    ],
+    "hb": [
+        "hub browse",
     ";sym:sp"
-  ],
-  "chd": [
-    ";sym:hd",
+    ],
+    "chd": [
+        ";sym:hd",
     ";sym:c"
-  ],
-  "gpu": [
-    "git add . && git commit -m 'unattended' && git push && echo 'the following changes were pushed:' && git diff --color HEAD~1 | less -R",
+    ],
+    "gpu": [
+        "git add . && git commit -m 'unattended' && git push && echo 'the following changes were pushed:' && git diff --color HEAD~1 | less -R",
     ";sym:sp"
-  ],
-  "z": [
-    "zsh",
+    ],
+    "z": [
+        "zsh",
     ";sym:sp"
-  ],
-  "l": [
-    ";sym:pwd",
+    ],
+    "l": [
+        ";sym:pwd",
     "exa -la",
     ";sym:sp"
-  ],
-  "cl": [
-    ";sym:c",
+    ],
+    "cl": [
+        ";sym:c",
     ";sym:l"
-  ],
-  "c": [
-    ";sym:.",
+    ],
+    "c": [
+        ";sym:.",
     ";sym:swap",
     ";sym:cd"
-  ],
-  "ck": [
-    ";sym:..",
+    ],
+    "ck": [
+        ";sym:..",
     ";sym:cl"
-  ],
-  "kkh": [
-    ";sym:homedir",
+    ],
+    "kkh": [
+        ";sym:homedir",
     ".min_full_history",
     ";sym:ja"
-  ],
-  "vh": [
-    ";sym:kkh",
+    ],
+    "vh": [
+        ";sym:kkh",
     ";sym:v"
-  ],
-  "ckk": [
-    ";sym:'ck",
+    ],
+    "ckk": [
+        ";sym:'ck",
     2,
     ";sym:times"
-  ],
-  "pwd": [
-    ";sym:.",
+    ],
+    "pwd": [
+        ";sym:.",
     ";sym:println!"
-  ],
-  "wdef": [
-    "swap over define dup save-symbol source println!"
-  ],
-  "gaacu": [
-    "git add . && git commit -m 'unattended'",
+    ],
+    "wdef": [
+        "swap over define dup save-symbol source println!"
+    ],
+    "gaacu": [
+        "git add . && git commit -m 'unattended'",
     ";sym:sp"
-  ],
-  "gdl": [
-    "git diff --color HEAD~1 | less -R",
+    ],
+    "gdl": [
+        "git diff --color HEAD~1 | less -R",
     ";sym:sp"
-  ],
-  "wkk": [
-    ";sym:.",
+    ],
+    "wkk": [
+        ";sym:.",
     ";sym:kkd",
     ";sym:cd",
     ";sym:gaacu",
     ";sym:gp",
     ";sym:gdl",
     ";sym:cd"
-  ],
-  "wfd": [
-    ";sym:wfk",
+    ],
+    "wfd": [
+        ";sym:wfk",
     1000,
     4,
     ";sym:*",
     ";sym:sleep",
     ";sym:dequote",
     ";sym:wfj"
-  ],
-  "kks": [
-    ";sym:hd",
+    ],
+    "kks": [
+        ";sym:hd",
     ".min_symbols",
     ";sym:ja"
-  ],
-  "vs": [
-    ";sym:kks",
+    ],
+    "vs": [
+        ";sym:kks",
     ";sym:v"
-  ],
-  "a": [
-    ";sym:kks",
+    ],
+    "a": [
+        ";sym:kks",
     ";sym:fread",
     ";sym:from-json"
-  ],
-  "psg": [
-    "ps aux | grep -v grep | grep --color '$1'",
-    ";sym:swap",
-    ";sym:quote",
-    ";sym:interpolate",
-    ";sym:sp"
-  ],
-  "wft": [
-    [
-      1000,
-      60,
-      ";sym:*",
-      ";sym:*",
-      ";sym:sleep"
     ],
-    ";sym:prepend",
-    ";sym:wfd"
-  ],
-  "du": [
-    "du -chs",
+    "psg": [
+        "ps aux | grep -v grep | grep --color '$1'",
+    ";sym:swap",
+    ";sym:quote",
+    ";sym:interpolate",
     ";sym:sp"
-  ],
-  "sh": [
+    ],
+    "wft": [
+        [
+            1000,
+    60,
+    ";sym:*",
+    ";sym:*",
+    ";sym:sleep"
+        ],
+        ";sym:prepend",
+        ";sym:wfd"
+    ],
+    "du": [
+        "du -chs",
     ";sym:sp"
-  ],
-  "ydla": [
-    "youtube-dl -i --no-playlist --download-archive youtube-dl-archive.txt --write-info-json --write-description --write-annotations --write-all-thumbnails --embed-thumbnail --add-metadata --xattrs --restrict-filenames -v --extract-audio --audio-format mp3 --audio-quality 0"
-  ],
-  "dla": [
-    ";sym:ydla",
+    ],
+    "sh": [
+        ";sym:sp"
+    ],
+    "ydla": [
+        "youtube-dl -i --no-playlist --download-archive youtube-dl-archive.txt --write-info-json --write-description --write-annotations --write-all-thumbnails --embed-thumbnail --add-metadata --xattrs --restrict-filenames -v --extract-audio --audio-format mp3 --audio-quality 0"
+    ],
+    "dla": [
+        ";sym:ydla",
     ";sym:quote",
     ";sym:append",
     "$1 '$2'",
     ";sym:swap",
     ";sym:interpolate",
     ";sym:sp"
-  ],
-  "gl": [
-    "git log --stat",
+    ],
+    "gl": [
+        "git log --stat",
     ";sym:sh"
-  ],
-  "ydlv": [
-    "youtube-dl -i --no-playlist --download-archive youtube-dl-archive.txt --write-info-json --write-description --write-annotations --write-all-thumbnails -v --prefer-free-formats --all-subs --add-metadata --xattrs --restrict-filenames"
-  ],
-  "dlv": [
-    ";sym:ydlv",
+    ],
+    "ydlv": [
+        "youtube-dl -i --no-playlist --download-archive youtube-dl-archive.txt --write-info-json --write-description --write-annotations --write-all-thumbnails -v --prefer-free-formats --all-subs --add-metadata --xattrs --restrict-filenames"
+    ],
+    "dlv": [
+        ";sym:ydlv",
     ";sym:quote",
     ";sym:append",
     "$1 '$2'",
     ";sym:swap",
     ";sym:interpolate",
     ";sym:sh"
-  ],
-  "rhlines": [
-    ";sym:kkh",
+    ],
+    "rhlines": [
+        ";sym:kkh",
     ";sym:fread",
     "\n",
     ";sym:split"
-  ],
-  "rhcounts": [
-    ";sym:rhlines",
+    ],
+    "rhcounts": [
+        ";sym:rhlines",
     {},
     [
-      ";sym:'line",
-      ";sym:define",
-      ";sym:'histogram",
-      ";sym:define",
-      [
-        ";sym:histogram",
-        ";sym:line",
-        ";sym:dhas?"
-      ],
-      [
-        ";sym:histogram",
-        ";sym:line",
-        ";sym:dget",
-        ";sym:succ",
-        ";sym:histogram",
-        ";sym:swap",
-        ";sym:line",
-        ";sym:dset"
-      ],
-      [
-        ";sym:histogram",
-        1,
-        ";sym:line",
-        ";sym:dset"
-      ],
-      ";sym:if"
-    ],
-    ";sym:reduce"
-  ],
-  "to-pairs": [
-    ";sym:'__dict",
-    ";sym:bind",
-    ";sym:__dict",
-    ";sym:dkeys",
-    [
-      ";sym:'_key",
-      ";sym:define",
-      ";sym:__dict",
-      ";sym:_key",
-      ";sym:dget",
-      ";sym:'_value",
-      ";sym:define",
-      ";sym:_key",
-      ";sym:quote",
-      ";sym:_value",
-      ";sym:swap",
-      ";sym:prepend"
-    ],
-    ";sym:map"
-  ],
-  "frequent-kapps": [
-    ";sym:rhcounts",
-    ";sym:to-pairs",
-    [
-      ";sym:first",
-      ";sym:swap",
-      ";sym:first",
-      ";sym:>"
-    ],
-    ";sym:sort"
-  ],
-  "pplabel": [
-    ";sym:to-str",
-    ": $1",
-    ";sym:ja",
-    ";sym:over",
-    ";sym:quote",
-    ";sym:interpolate",
-    ";sym:println!"
-  ],
-  "msleep": [
-    ";sym:min",
-    ";sym:sleep"
-  ],
-  "kkh-tail": [
-    ";sym:kkh",
-    "tail -F",
-    ";sym:swap",
-    ";sym:js",
-    ";sym:sh"
-  ],
-  "fd": [
-    ";sym:quote",
-    "fd '$1'",
-    ";sym:swap",
-    ";sym:interpolate",
-    ";sym:sh"
-  ],
-  "df": [
-    "df -h",
-    ";sym:sh"
-  ],
-  "kk": [
-    ";sym:to-str",
-    ";sym:k"
-  ],
-  "cmus-pause-toggle": [
-    ";sym:'c",
-    ";sym:kk"
-  ],
-  "cmus-pause-toggle-after-minutes": [
-    ";sym:msleep",
-    ";sym:cmus-pause-toggle"
-  ],
-  "wc": [
-    [
-      ";sym:'ddkPjmSGp",
-      ";sym:'C-o",
-      ";sym:'mSj",
-      ";sym:':w",
-      ";sym:'Enter"
-    ],
-    ";sym:'kk",
-    ";sym:foreach"
-  ],
-  "mpv-pause-toggle": [
-    ";sym:'Space",
-    ";sym:kk"
-  ],
-  "mpv-pause-toggle-after-minutes": [
-    ";sym:msleep",
-    ";sym:mpv-pause-toggle"
-  ],
-  "gs": [
-    "git status",
-    ";sym:sh"
-  ],
-  "gp": [
-    "git push",
-    ";sym:sh"
-  ],
-  "fuzzify": [
-    "",
-    ";sym:split",
-    ".*",
-    ";sym:join",
-    ".*",
-    ";sym:jp",
-    ".*",
-    ";sym:ja"
-  ],
-  "kapps-filter": [
-    ";sym:'query",
+        ";sym:'line",
+    ";sym:define",
+    ";sym:'histogram",
     ";sym:define",
     [
-      ";sym:last",
-      ";sym:query",
-      ";sym:match"
+        ";sym:histogram",
+    ";sym:line",
+    ";sym:dhas?"
     ],
-    ";sym:filter"
-  ],
-  "kf": [
-    ";sym:to-str",
-    ";sym:fuzzify",
-    ";sym:frequent-kapps",
-    ";sym:swap",
-    ";sym:kapps-filter",
-    8,
-    ";sym:take",
-    0,
-    ";sym:'kfi",
-    ";sym:define",
     [
-      ";sym:last",
-      ";sym:quote",
-      ";sym:kfi",
-      ";sym:swap",
-      ";sym:prepend",
-      ";sym:kfi",
-      ";sym:succ",
-      ";sym:'kfi",
-      ";sym:bind"
-    ],
-    ";sym:map",
-    ";sym:quote",
-    [
-      ";sym:temp-kf-last-result"
-    ],
-    ";sym:bind",
-    ";sym:temp-kf-last-result",
-    [
-      ";sym:println!"
-    ],
-    ";sym:foreach"
-  ],
-  "mcl": [
-    ";sym:dup",
-    ";sym:mkdir",
-    ";sym:cl"
-  ],
-  "ek": [
-    ";sym:temp-kf-last-result",
-    ";sym:swap",
-    ";sym:get",
-    ";sym:last",
-    ";sym:dup",
-    "\n",
-    ";sym:ja",
-    ";sym:kkh",
-    ";sym:fappend",
-    ";sym:eval"
-  ],
-  "jf": [
-    ";sym:'kf",
-    ";sym:kf"
-  ],
-  "jad": [
-    "yarn add --dev",
-    ";sym:swap",
-    ";sym:js",
-    ";sym:sh"
-  ],
-  "r": [
-    ";sym:to-str",
-    ";sym:sh"
-  ],
-  "wrap-in-single-quotes": [
-    [
-      ";sym:quote",
-      "'$1'",
-      ";sym:swap",
-      ";sym:interpolate"
-    ],
-    ";sym:map"
-  ],
-  "cfsaude-link-new": [
-    ";sym:quote",
-    ";sym:prepend",
-    ";sym:wrap-in-single-quotes",
-    ";sym:dequote",
-    ";sym:js",
-    "node ~/.local/src/github.com/agentofuser/cfsau.de/node_modules/.bin/netlify-shortener",
-    ";sym:swap",
-    ";sym:js",
-    ";sym:sh"
-  ],
-  "say": [
-    ";sym:quote",
-    ";sym:wrap-in-single-quotes",
-    ";sym:dequote",
-    "say",
-    ";sym:swap",
-    ";sym:js",
-    ";sym:sh"
-  ],
-  "hsrst-link-new": [
-    ";sym:quote",
-    ";sym:prepend",
-    ";sym:wrap-in-single-quotes",
-    ";sym:dequote",
-    ";sym:js",
-    "node ~/.local/src/github.com/agentofuser/hsr.st/node_modules/.bin/netlify-shortener",
-    ";sym:swap",
-    ";sym:js",
-    ";sym:sh"
-  ],
-  "ak": [
-    ";sym:temp-kf-last-result",
-    ";sym:swap",
-    ";sym:get",
-    ";sym:last",
-    ";sym:dup",
-    "\n",
-    ";sym:ja",
-    ";sym:kkh",
-    ";sym:fappend",
-    ";sym:parse"
-  ],
-  "u": [
-    ";sym:dequote"
-  ],
-  "lkf": [
-    ";sym:temp-kf-last-result",
-    [
-      ";sym:println!"
-    ],
-    ";sym:foreach"
-  ],
-  "fl": [
-    ";sym:swap"
-  ],
-  "minutes-left-say": [
-    ";sym:to-json",
-    "left",
-    ";sym:js",
-    ";sym:w",
-    ";sym:wrap-in-single-quotes",
-    [
-      ";sym:dup",
-      ";sym:say"
-    ],
-    3,
-    ";sym:times",
-    ";sym:d"
-  ],
-  "git-add-untracked-files-count-one": [
-    "git ls-files --others --exclude-standard | head -n 1 | xargs -J{} git add -- '{}'",
-    ";sym:sh"
-  ],
-  "gcu": [
-    "git commit -m 'unattended'",
-    ";sym:sh"
-  ],
-  "git-untracked-files-count": [
-    "git ls-files --others --exclude-standard | wc -l",
-    ";sym:run",
-    ";sym:'output",
+        ";sym:histogram",
+    ";sym:line",
     ";sym:dget",
-    ";sym:eval"
-  ],
-  "git-untracked-files-each-commit-and-push": [
-    [
-      ";sym:git-add-untracked-files-count-one",
-      ";sym:gcu",
-      ";sym:gp"
+    ";sym:succ",
+    ";sym:histogram",
+    ";sym:swap",
+    ";sym:line",
+    ";sym:dset"
     ],
-    ";sym:git-untracked-files-count",
-    ";sym:times"
-  ],
-  "range-from-one": [
-    ";sym:'_count",
-    ";sym:define",
+    [
+        ";sym:histogram",
     1,
-    ";sym:'_i",
-    ";sym:define",
-    [
-      []
+    ";sym:line",
+    ";sym:dset"
     ],
-    ";sym:'_list",
-    ";sym:define",
-    [
-      ";sym:_i",
-      ";sym:_list",
-      ";sym:append",
-      ";sym:quote",
-      ";sym:'_list",
-      ";sym:bind",
-      ";sym:_i",
-      ";sym:succ",
-      ";sym:'_i",
-      ";sym:bind"
-    ],
-    ";sym:_count",
-    ";sym:times",
-    ";sym:_list"
-  ]
+    ";sym:if"
+        ],
+        ";sym:reduce"
+            ],
+            "to-pairs": [
+                ";sym:'__dict",
+            ";sym:bind",
+            ";sym:__dict",
+            ";sym:dkeys",
+            [
+                ";sym:'_key",
+            ";sym:define",
+            ";sym:__dict",
+            ";sym:_key",
+            ";sym:dget",
+            ";sym:'_value",
+            ";sym:define",
+            ";sym:_key",
+            ";sym:quote",
+            ";sym:_value",
+            ";sym:swap",
+            ";sym:prepend"
+            ],
+            ";sym:map"
+            ],
+            "frequent-kapps": [
+                ";sym:rhcounts",
+            ";sym:to-pairs",
+            [
+                ";sym:first",
+            ";sym:swap",
+            ";sym:first",
+            ";sym:>"
+            ],
+            ";sym:sort"
+            ],
+            "pplabel": [
+                ";sym:to-str",
+            ": $1",
+            ";sym:ja",
+            ";sym:over",
+            ";sym:quote",
+            ";sym:interpolate",
+            ";sym:println!"
+            ],
+            "msleep": [
+                ";sym:min",
+            ";sym:sleep"
+            ],
+            "kkh-tail": [
+                ";sym:kkh",
+            "tail -F",
+            ";sym:swap",
+            ";sym:js",
+            ";sym:sh"
+            ],
+            "fd": [
+                ";sym:quote",
+            "fd '$1'",
+            ";sym:swap",
+            ";sym:interpolate",
+            ";sym:sh"
+            ],
+            "df": [
+                "df -h",
+            ";sym:sh"
+            ],
+            "kk": [
+                ";sym:to-str",
+            ";sym:k"
+            ],
+            "cmus-pause-toggle": [
+                ";sym:'c",
+            ";sym:kk"
+            ],
+            "cmus-pause-toggle-after-minutes": [
+                ";sym:msleep",
+            ";sym:cmus-pause-toggle"
+            ],
+            "wc": [
+                [
+                    ";sym:'ddkPjmSGp",
+            ";sym:'C-o",
+            ";sym:'mSj",
+            ";sym:':w",
+            ";sym:'Enter"
+                ],
+                ";sym:'kk",
+                ";sym:foreach"
+            ],
+            "mpv-pause-toggle": [
+                ";sym:'Space",
+            ";sym:kk"
+            ],
+            "mpv-pause-toggle-after-minutes": [
+                ";sym:msleep",
+            ";sym:mpv-pause-toggle"
+            ],
+            "gs": [
+                "git status",
+            ";sym:sh"
+            ],
+            "gp": [
+                "git push",
+            ";sym:sh"
+            ],
+            "fuzzify": [
+                "",
+            ";sym:split",
+            ".*",
+            ";sym:join",
+            ".*",
+            ";sym:jp",
+            ".*",
+            ";sym:ja"
+            ],
+            "kapps-filter": [
+                ";sym:'query",
+            ";sym:define",
+            [
+                ";sym:last",
+            ";sym:query",
+            ";sym:match"
+            ],
+            ";sym:filter"
+            ],
+            "kf": [
+                ";sym:to-str",
+            ";sym:fuzzify",
+            ";sym:frequent-kapps",
+            ";sym:swap",
+            ";sym:kapps-filter",
+            8,
+            ";sym:take",
+            0,
+            ";sym:'kfi",
+            ";sym:define",
+            [
+                ";sym:last",
+            ";sym:quote",
+            ";sym:kfi",
+            ";sym:swap",
+            ";sym:prepend",
+            ";sym:kfi",
+            ";sym:succ",
+            ";sym:'kfi",
+            ";sym:bind"
+            ],
+            ";sym:map",
+            ";sym:quote",
+            [
+                ";sym:temp-kf-last-result"
+            ],
+            ";sym:bind",
+            ";sym:temp-kf-last-result",
+            [
+                ";sym:println!"
+            ],
+            ";sym:foreach"
+                ],
+                "mcl": [
+                    ";sym:dup",
+                ";sym:mkdir",
+                ";sym:cl"
+                ],
+                "ek": [
+                    ";sym:temp-kf-last-result",
+                ";sym:swap",
+                ";sym:get",
+                ";sym:last",
+                ";sym:dup",
+                "\n",
+                ";sym:ja",
+                ";sym:kkh",
+                ";sym:fappend",
+                ";sym:eval"
+                ],
+                "jf": [
+                    ";sym:'kf",
+                ";sym:kf"
+                ],
+                "jad": [
+                    "yarn add --dev",
+                ";sym:swap",
+                ";sym:js",
+                ";sym:sh"
+                ],
+                "r": [
+                    ";sym:to-str",
+                ";sym:sh"
+                ],
+                "wrap-in-single-quotes": [
+                    [
+                        ";sym:quote",
+                "'$1'",
+                ";sym:swap",
+                ";sym:interpolate"
+                    ],
+                    ";sym:map"
+                ],
+                "cfsaude-link-new": [
+                    ";sym:quote",
+                ";sym:prepend",
+                ";sym:wrap-in-single-quotes",
+                ";sym:dequote",
+                ";sym:js",
+                "node ~/.local/src/github.com/agentofuser/cfsau.de/node_modules/.bin/netlify-shortener",
+                ";sym:swap",
+                ";sym:js",
+                ";sym:sh"
+                ],
+                "say": [
+                    ";sym:quote",
+                ";sym:wrap-in-single-quotes",
+                ";sym:dequote",
+                "say",
+                ";sym:swap",
+                ";sym:js",
+                ";sym:sh"
+                ],
+                "hsrst-link-new": [
+                    ";sym:quote",
+                ";sym:prepend",
+                ";sym:wrap-in-single-quotes",
+                ";sym:dequote",
+                ";sym:js",
+                "node ~/.local/src/github.com/agentofuser/hsr.st/node_modules/.bin/netlify-shortener",
+                ";sym:swap",
+                ";sym:js",
+                ";sym:sh"
+                ],
+                "ak": [
+                    ";sym:temp-kf-last-result",
+                ";sym:swap",
+                ";sym:get",
+                ";sym:last",
+                ";sym:dup",
+                "\n",
+                ";sym:ja",
+                ";sym:kkh",
+                ";sym:fappend",
+                ";sym:parse"
+                ],
+                "u": [
+                    ";sym:dequote"
+                ],
+                "lkf": [
+                    ";sym:temp-kf-last-result",
+                [
+                    ";sym:println!"
+                ],
+                ";sym:foreach"
+                ],
+                "fl": [
+                    ";sym:swap"
+                ],
+                "minutes-left-say": [
+                    ";sym:to-json",
+                "left",
+                ";sym:js",
+                ";sym:w",
+                ";sym:wrap-in-single-quotes",
+                [
+                    ";sym:dup",
+                ";sym:say"
+                ],
+                3,
+                ";sym:times",
+                ";sym:d"
+                ],
+                "git-add-untracked-files-count-one": [
+                    "git ls-files --others --exclude-standard | head -n 1 | xargs -J{} git add -- '{}'",
+                ";sym:sh"
+                ],
+                "gcu": [
+                    "git commit -m 'unattended'",
+                ";sym:sh"
+                ],
+                "git-untracked-files-count": [
+                    "git ls-files --others --exclude-standard | wc -l",
+                ";sym:run",
+                ";sym:'output",
+                ";sym:dget",
+                ";sym:eval"
+                ],
+                "git-untracked-files-each-commit-and-push": [
+                    [
+                        ";sym:git-add-untracked-files-count-one",
+                ";sym:gcu",
+                ";sym:gp"
+                    ],
+                    ";sym:git-untracked-files-count",
+                    ";sym:times"
+                ],
+                "range-from-one": [
+                    ";sym:'_count",
+                ";sym:define",
+                1,
+                ";sym:'_i",
+                ";sym:define",
+                [
+                    []
+                ],
+                ";sym:'_list",
+                ";sym:define",
+                [
+                    ";sym:_i",
+                ";sym:_list",
+                ";sym:append",
+                ";sym:quote",
+                ";sym:'_list",
+                ";sym:bind",
+                ";sym:_i",
+                ";sym:succ",
+                ";sym:'_i",
+                ";sym:bind"
+                ],
+                ";sym:_count",
+                ";sym:times",
+                ";sym:_list"
+                    ],
+                    "range-to-one": [
+                        ";sym:range-from-one",
+                    ";sym:reverse"
+                    ],
+                    "minutes-count-down": [
+                        ";sym:range-to-one",
+                    [
+                        ";sym:minutes-left-say",
+                    1,
+                    ";sym:msleep"
+                    ],
+                    ";sym:foreach"
+                    ]
 }
