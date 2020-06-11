@@ -104,7 +104,7 @@
   "wdef": [
     "swap over define dup save-symbol source println!"
   ],
-  "gcu": [
+  "gaacu": [
     "git add . && git commit -m 'unattended'",
     ";sym:sp"
   ],
@@ -116,7 +116,7 @@
     ";sym:.",
     ";sym:kkd",
     ";sym:cd",
-    ";sym:gcu",
+    ";sym:gaacu",
     ";sym:gp",
     ";sym:gdl",
     ";sym:cd"
@@ -487,5 +487,70 @@
   ],
   "fl": [
     ";sym:swap"
+  ],
+  "minutes-left-say": [
+    ";sym:to-json",
+    "left",
+    ";sym:js",
+    ";sym:w",
+    ";sym:wrap-in-single-quotes",
+    [
+      ";sym:dup",
+      ";sym:say"
+    ],
+    3,
+    ";sym:times",
+    ";sym:d"
+  ],
+  "git-add-untracked-files-count-one": [
+    "git ls-files --others --exclude-standard | head -n 1 | xargs -J{} git add -- '{}'",
+    ";sym:sh"
+  ],
+  "gcu": [
+    "git commit -m 'unattended'",
+    ";sym:sh"
+  ],
+  "git-untracked-files-count": [
+    "git ls-files --others --exclude-standard | wc -l",
+    ";sym:run",
+    ";sym:'output",
+    ";sym:dget",
+    ";sym:eval"
+  ],
+  "git-untracked-files-each-commit-and-push": [
+    [
+      ";sym:git-add-untracked-files-count-one",
+      ";sym:gcu",
+      ";sym:gp"
+    ],
+    ";sym:git-untracked-files-count",
+    ";sym:times"
+  ],
+  "range-from-one": [
+    ";sym:'_count",
+    ";sym:define",
+    1,
+    ";sym:'_i",
+    ";sym:define",
+    [
+      []
+    ],
+    ";sym:'_list",
+    ";sym:define",
+    [
+      ";sym:_i",
+      ";sym:_list",
+      ";sym:append",
+      ";sym:quote",
+      ";sym:'_list",
+      ";sym:bind",
+      ";sym:_i",
+      ";sym:succ",
+      ";sym:'_i",
+      ";sym:bind"
+    ],
+    ";sym:_count",
+    ";sym:times",
+    ";sym:_list"
   ]
 }
