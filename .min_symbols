@@ -450,7 +450,7 @@
     "say",
     ";sym:swap",
     ";sym:js",
-    ";sym:sh"
+    ";sym:sh-quiet"
   ],
   "hsrst-link-new": [
     ";sym:quote",
@@ -565,5 +565,25 @@
       ";sym:msleep"
     ],
     ";sym:foreach"
+  ],
+  "sh-quiet": [
+    ";sym:system",
+    ";sym:pop"
+  ],
+  "pbcopy": [
+    "echo '$1' | pbcopy",
+    ";sym:fl",
+    ";sym:w",
+    ";sym:interpolate",
+    ";sym:sh-quiet"
+  ],
+  "sh1": [
+    ";sym:to-str",
+    ";sym:fl",
+    ";sym:w",
+    ";sym:wrap-in-single-quotes",
+    ";sym:u",
+    ";sym:js",
+    ";sym:sh"
   ]
 }
