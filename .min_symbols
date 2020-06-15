@@ -745,5 +745,55 @@
       ";sym:prepend"
     ],
     ";sym:map"
+  ],
+  "x": [
+    ";sym:times"
+  ],
+  "qjs": [
+    " ",
+    ";sym:join"
+  ],
+  "fla": [
+    ";sym:swap",
+    ";sym:append"
+  ],
+  "github-current-user-directory-project-from-symbol-clone": [
+    ";sym:to-str",
+    ";sym:'_project",
+    ";sym:define",
+    ";sym:.",
+    "/",
+    ";sym:split",
+    ";sym:last",
+    ";sym:'_author",
+    ";sym:define",
+    [],
+    ";sym:_author",
+    ";sym:fla",
+    ";sym:_project",
+    ";sym:fla",
+    "/",
+    ";sym:join",
+    ";sym:w",
+    "clone",
+    ";sym:fla",
+    "repo",
+    ";sym:fla",
+    ";sym:'gh",
+    ";sym:to-str",
+    [
+      ";sym:_command"
+    ],
+    ";sym:define",
+    ";sym:reverse",
+    ";sym:qjs",
+    [
+      ";sym:_args"
+    ],
+    ";sym:define",
+    ";sym:_command",
+    ";sym:_args",
+    ";sym:js",
+    ";sym:sh"
   ]
 }
