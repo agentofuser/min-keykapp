@@ -795,5 +795,51 @@
     ";sym:_args",
     ";sym:js",
     ";sym:sh"
+  ],
+  "sh-sym-args": [
+    ";sym:to-str",
+    [
+      ";sym:_command"
+    ],
+    ";sym:define",
+    ";sym:reverse",
+    ";sym:qjs",
+    [
+      ";sym:_args"
+    ],
+    ";sym:define",
+    ";sym:_command",
+    ";sym:_args",
+    ";sym:js",
+    ";sym:sh"
+  ],
+  "rg-smartcase-from-str": [
+    [],
+    ";sym:append",
+    "-S",
+    ";sym:fla",
+    ";sym:'rg",
+    ";sym:sh-sym-args"
+  ],
+  "rg-smartcase-from-sym": [
+    ";sym:to-str",
+    ";sym:rg-smartcase-from-str"
+  ],
+  "rg": [
+    ";sym:rg-smartcase-from-sym"
+  ],
+  "vn": [
+    "nvim -u NONE",
+    ";sym:swap",
+    ";sym:js",
+    ";sym:sh-quiet"
+  ],
+  "gpkkh": [
+    ";sym:chd",
+    "aou/keybase-repos/minkeykapp-full-history",
+    ";sym:cd",
+    ";sym:gaacu",
+    ";sym:gp",
+    ";sym:cd"
   ]
 }
