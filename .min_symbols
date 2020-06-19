@@ -894,5 +894,21 @@
   "glp": [
     "git log --stat --patch",
     ";sym:sh"
+  ],
+  "keykapp-code-backup": [
+    ";sym:.",
+    ";sym:kkd",
+    ";sym:cd",
+    ";sym:gaacu",
+    ";sym:gp",
+    ";sym:cd"
+  ],
+  "keykapp-history-backup": [
+    ";sym:chd",
+    "aou/keybase-repos/minkeykapp-full-history",
+    ";sym:cd",
+    ";sym:gaacu",
+    ";sym:gp",
+    ";sym:cd"
   ]
 }
