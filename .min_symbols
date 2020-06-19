@@ -867,7 +867,7 @@
     ";sym:_kapp-log-tail",
     ";sym:size",
     ";sym:succ",
-    ";sym:frequent-ngrams",
+    ";sym:temp-cached-frequent-ngrams",
     [
       ";sym:last",
       ";sym:quote-map",
@@ -923,5 +923,33 @@
   ],
   "nb-keykapp-backup": [
     ";sym:netbatch-keykapp-backup"
+  ],
+  "kapp-history-last": [
+    ";sym:rhlines",
+    [
+      "",
+      ";sym:=="
+    ],
+    ";sym:reject",
+    -2,
+    ";sym:get-negative-index",
+    ";sym:println",
+    ";sym:parse",
+    ";sym:quote-map",
+    ";sym:last"
+  ],
+  "get-negative-index": [
+    ";sym:over",
+    ";sym:size",
+    ";sym:+",
+    ";sym:get"
+  ],
+  "kapp-suggestions-weighted": [
+    ";sym:kapp-history-last",
+    ";sym:kapp-sequence-frequent-successor-suggestions"
+  ],
+  "temp-cached-frequent-ngrams": [
+    ";sym:pop",
+    ";sym:temp-cached-frequent-bigrams"
   ]
 }
