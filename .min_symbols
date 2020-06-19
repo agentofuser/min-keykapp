@@ -910,5 +910,18 @@
     ";sym:gaacu",
     ";sym:gp",
     ";sym:cd"
+  ],
+  "keykapp-backup": [
+    ";sym:keykapp-code-backup",
+    ";sym:keykapp-history-backup"
+  ],
+  "netbatch-keykapp-backup": [
+    [
+      ";sym:keykapp-backup"
+    ],
+    ";sym:wfd"
+  ],
+  "nb-keykapp-backup": [
+    ";sym:netbatch-keykapp-backup"
   ]
 }
