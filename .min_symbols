@@ -890,5 +890,9 @@
       ";sym:append"
     ],
     ";sym:map"
+  ],
+  "glp": [
+    "git log --stat --patch",
+    ";sym:sh"
   ]
 }
