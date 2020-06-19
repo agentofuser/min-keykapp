@@ -92,3 +92,10 @@ rhcounts '__dict define
 
 ; keep result of last 'kf run (frequent kapp fuzzy filter)
 () 'temp-kf-last-result define
+
+
+; HACK memoize kapp ngrams
+(()) 'temp-cached-frequent-bigrams define
+
+; keep result of last temp-kapp-suggestions-recompute
+(()) 'temp-kapp-suggestions define

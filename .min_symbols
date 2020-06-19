@@ -951,5 +951,50 @@
   "temp-cached-frequent-ngrams": [
     ";sym:pop",
     ";sym:temp-cached-frequent-bigrams"
+  ],
+  "temp-cached-frequent-bigrams-recompute": [
+    2,
+    ";sym:frequent-ngrams",
+    ";sym:quote",
+    [
+      ";sym:temp-cached-frequent-bigrams"
+    ],
+    ";sym:bind"
+  ],
+  "temp-kapp-suggestions-recompute": [
+    ";sym:kapp-suggestions-weighted",
+    ";sym:quote",
+    [
+      ";sym:temp-kapp-suggestions"
+    ],
+    ";sym:bind"
+  ],
+  "temp-kapp-suggestions-display": [
+    ";sym:temp-kapp-suggestions",
+    6,
+    ";sym:take",
+    [
+      ";sym:println!"
+    ],
+    ";sym:foreach"
+  ],
+  "temp-kapp-suggestions-index-run": [
+    ";sym:temp-kapp-suggestions",
+    ";sym:swap",
+    ";sym:get",
+    ";sym:last",
+    ";sym:dequote"
+  ],
+  "rk": [
+    ";sym:temp-kapp-suggestions-index-run"
+  ],
+  "temp-kapp-suggestions-index-mention": [
+    ";sym:temp-kapp-suggestions",
+    ";sym:swap",
+    ";sym:get",
+    ";sym:last"
+  ],
+  "mk": [
+    ";sym:temp-kapp-suggestions-index-mention"
   ]
 }
