@@ -841,5 +841,54 @@
     ";sym:gaacu",
     ";sym:gp",
     ";sym:cd"
+  ],
+  "gb": [
+    "git branch",
+    ";sym:sh"
+  ],
+  "git-checkout": [
+    ";sym:to-str",
+    ";sym:w",
+    "checkout",
+    ";sym:fla",
+    ";sym:'git",
+    ";sym:sh-sym-args"
+  ],
+  "go": [
+    ";sym:git-checkout"
+  ],
+  "kapp-sequence-frequent-successor-suggestions": [
+    ";sym:quote-map",
+    ";sym:quote",
+    [
+      ";sym:_kapp-log-tail"
+    ],
+    ";sym:define",
+    ";sym:_kapp-log-tail",
+    ";sym:size",
+    ";sym:succ",
+    ";sym:frequent-ngrams",
+    [
+      ";sym:last",
+      ";sym:quote-map",
+      ";sym:_kapp-log-tail",
+      ";sym:size",
+      ";sym:take",
+      ";sym:_kapp-log-tail",
+      ";sym:=="
+    ],
+    ";sym:filter",
+    [
+      ";sym:dup",
+      ";sym:last",
+      ";sym:quote-map",
+      ";sym:last",
+      ";sym:fl",
+      ";sym:first",
+      [],
+      ";sym:prepend",
+      ";sym:append"
+    ],
+    ";sym:map"
   ]
 }
