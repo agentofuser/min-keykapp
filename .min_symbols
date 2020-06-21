@@ -931,7 +931,7 @@
       ";sym:=="
     ],
     ";sym:reject",
-    -2,
+    -1,
     ";sym:get-negative-index",
     ";sym:println",
     ";sym:parse",
@@ -996,5 +996,20 @@
   ],
   "mk": [
     ";sym:temp-kapp-suggestions-index-mention"
+  ],
+  "kapp-suggestions-do-offer": [
+    ";sym:temp-kapp-suggestions-recompute",
+    ";sym:temp-kapp-suggestions-display"
+  ],
+  "sks": [
+    ";sym:kapp-suggestions-do-offer"
+  ],
+  "j": [
+    0,
+    ";sym:rk"
+  ],
+  "f": [
+    1,
+    ";sym:rk"
   ]
 }
