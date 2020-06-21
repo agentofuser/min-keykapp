@@ -124,7 +124,7 @@
   "wfd": [
     ";sym:wfk",
     1000,
-    4,
+    8,
     ";sym:*",
     ";sym:sleep",
     ";sym:dequote",
@@ -137,7 +137,7 @@
   ],
   "vs": [
     ";sym:kks",
-    ";sym:v"
+    ";sym:vn"
   ],
   "a": [
     ";sym:kks",
@@ -978,15 +978,15 @@
     ],
     ";sym:foreach"
   ],
-  "temp-kapp-suggestions-index-run": [
+  "temp-kapp-suggestions-index-play": [
     ";sym:temp-kapp-suggestions",
     ";sym:swap",
     ";sym:get",
     ";sym:last",
     ";sym:dequote"
   ],
-  "rk": [
-    ";sym:temp-kapp-suggestions-index-run"
+  "pk": [
+    ";sym:temp-kapp-suggestions-index-play"
   ],
   "temp-kapp-suggestions-index-mention": [
     ";sym:temp-kapp-suggestions",
@@ -1006,10 +1006,10 @@
   ],
   "j": [
     0,
-    ";sym:rk"
+    ";sym:pk"
   ],
   "f": [
     1,
-    ";sym:rk"
+    ";sym:pk"
   ]
 }
