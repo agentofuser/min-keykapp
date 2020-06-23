@@ -678,8 +678,29 @@
     ";sym:define",
     ";sym:rhlines",
     [
-      "wc",
-      ";sym:=="
+      ";sym:'line",
+      ";sym:define",
+      [
+        [
+          "j",
+          ";sym:=="
+        ],
+        [
+          "f",
+          ";sym:=="
+        ],
+        [
+          "^[0-9]+ (ek|ak|pk|mk)$",
+          ";sym:match"
+        ]
+      ],
+      [
+        ";sym:'criterion",
+        ";sym:define",
+        ";sym:line",
+        ";sym:criterion"
+      ],
+      ";sym:any?"
     ],
     ";sym:reject",
     [
