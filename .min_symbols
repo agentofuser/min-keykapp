@@ -1032,5 +1032,22 @@
     ".app",
     ";sym:ja",
     ";sym:o"
+  ],
+  "keykapp-code-git-log-patch": [
+    ";sym:kkd",
+    ";sym:cl",
+    ";sym:glp",
+    ";sym:cd"
+  ],
+  "keykapp-history-git-log-patch": [
+    ";sym:chd",
+    "aou/keybase-repos/minkeykapp-full-history",
+    ";sym:cd",
+    ";sym:glp",
+    ";sym:cd"
+  ],
+  "keykapp-code-and-history-git-log-patch": [
+    ";sym:keykapp-code-git-log-patch",
+    ";sym:keykapp-history-git-log-patch"
   ]
 }
