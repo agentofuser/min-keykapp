@@ -983,6 +983,12 @@
     ";sym:swap",
     ";sym:get",
     ";sym:last",
+    ";sym:dup",
+    ";sym:to-str",
+    "\n",
+    ";sym:ja",
+    ";sym:kkh",
+    ";sym:fappend",
     ";sym:dequote"
   ],
   "pk": [
@@ -992,7 +998,14 @@
     ";sym:temp-kapp-suggestions",
     ";sym:swap",
     ";sym:get",
-    ";sym:last"
+    ";sym:last",
+    ";sym:dup",
+    ";sym:quote",
+    ";sym:to-str",
+    "\n",
+    ";sym:ja",
+    ";sym:kkh",
+    ";sym:fappend"
   ],
   "mk": [
     ";sym:temp-kapp-suggestions-index-mention"
@@ -1011,5 +1024,13 @@
   "f": [
     1,
     ";sym:pk"
+  ],
+  "oa": [
+    ";sym:to-str",
+    "/Applications/",
+    ";sym:jp",
+    ".app",
+    ";sym:ja",
+    ";sym:o"
   ]
 }
