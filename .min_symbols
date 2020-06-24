@@ -994,6 +994,21 @@
     ";sym:temp-kapp-suggestions",
     6,
     ";sym:take",
+    0,
+    ";sym:'_i",
+    ";sym:define",
+    [
+      ";sym:last",
+      ";sym:quote",
+      ";sym:_i",
+      ";sym:swap",
+      ";sym:prepend",
+      ";sym:_i",
+      ";sym:succ",
+      ";sym:'_i",
+      ";sym:bind"
+    ],
+    ";sym:map",
     [
       ";sym:println!"
     ],
