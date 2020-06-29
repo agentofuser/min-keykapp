@@ -1085,5 +1085,24 @@
   "keykapp-code-and-history-git-log-patch": [
     ";sym:keykapp-code-git-log-patch",
     ";sym:keykapp-history-git-log-patch"
+  ],
+  "keykapp-data-dir": [
+    ";sym:hd",
+    ".local/share/keykapp/",
+    ";sym:ja"
+  ],
+  "keykapp-data-load-and-bind": [
+    ";sym:dup",
+    ";sym:to-str",
+    ".json",
+    ";sym:ja",
+    ";sym:keykapp-data-dir",
+    ";sym:fl",
+    ";sym:ja",
+    ";sym:fread",
+    ";sym:from-json",
+    ";sym:w",
+    ";sym:fl",
+    ";sym:bind"
   ]
 }
