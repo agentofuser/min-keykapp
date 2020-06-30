@@ -1104,5 +1104,60 @@
     ";sym:w",
     ";sym:fl",
     ";sym:bind"
+  ],
+  "hdcd": [
+    ";sym:hd",
+    ";sym:cd"
+  ],
+  "parse-or-empty": [
+    [
+      [
+        ";sym:parse"
+      ],
+      [
+        ";sym:pop",
+        []
+      ]
+    ],
+    ";sym:try"
+  ],
+  "histogram-item-initialize-or-increment": [
+    ";sym:'line",
+    ";sym:define",
+    ";sym:'histogram",
+    ";sym:define",
+    [
+      ";sym:histogram",
+      ";sym:line",
+      ";sym:dhas?"
+    ],
+    [
+      ";sym:histogram",
+      ";sym:line",
+      ";sym:dget",
+      ";sym:succ",
+      ";sym:histogram",
+      ";sym:swap",
+      ";sym:line",
+      ";sym:dset"
+    ],
+    [
+      ";sym:histogram",
+      1,
+      ";sym:line",
+      ";sym:dset"
+    ],
+    ";sym:if"
+  ],
+  "temp-cached-ngram-histogram": [
+    {}
+  ],
+  "to-keykapp-data-dir-filepath": [
+    ";sym:to-str",
+    ".json",
+    ";sym:ja",
+    ";sym:keykapp-data-dir",
+    ";sym:fl",
+    ";sym:ja"
   ]
 }
