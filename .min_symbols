@@ -704,17 +704,7 @@
     ],
     ";sym:reject",
     [
-      [
-        [
-          ";sym:parse"
-        ],
-        [
-          ";sym:format-error",
-          ";sym:println!",
-          []
-        ]
-      ],
-      ";sym:try"
+      ";sym:parse-or-empty"
     ],
     ";sym:map",
     ";sym:harvest",
@@ -734,7 +724,16 @@
       ";sym:join"
     ],
     ";sym:map",
-    ";sym:item-counts",
+    {},
+    [
+      ";sym:histogram-item-initialize-or-increment"
+    ],
+    ";sym:reduce",
+    [
+      ";sym:temp-cached-ngram-histogram"
+    ],
+    ";sym:keykapp-data-save-and-bind",
+    ";sym:temp-cached-ngram-histogram",
     ";sym:to-pairs",
     [
       ";sym:first",
@@ -1154,5 +1153,29 @@
     ";sym:keykapp-data-dir",
     ";sym:fl",
     ";sym:ja"
+  ],
+  "keykapp-data-save-and-bind": [
+    ";sym:quote",
+    [
+      ";sym:_symbol"
+    ],
+    ";sym:define",
+    [
+      ";sym:_data"
+    ],
+    ";sym:define",
+    ";sym:_symbol",
+    ";sym:to-keykapp-data-dir-filepath",
+    [
+      ";sym:_destination-filepath"
+    ],
+    ";sym:define",
+    ";sym:_data",
+    ";sym:to-json",
+    ";sym:_destination-filepath",
+    ";sym:fwrite",
+    ";sym:_data",
+    ";sym:_symbol",
+    ";sym:bind"
   ]
 }
