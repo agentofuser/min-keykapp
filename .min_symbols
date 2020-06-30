@@ -678,29 +678,7 @@
     ";sym:define",
     ";sym:rhlines",
     [
-      ";sym:'line",
-      ";sym:define",
-      [
-        [
-          "j",
-          ";sym:=="
-        ],
-        [
-          "f",
-          ";sym:=="
-        ],
-        [
-          "^[0-9]+ (ek|ak|pk|mk)$",
-          ";sym:match"
-        ]
-      ],
-      [
-        ";sym:'criterion",
-        ";sym:define",
-        ";sym:line",
-        ";sym:criterion"
-      ],
-      ";sym:any?"
+      ";sym:keykapp-history-hack?"
     ],
     ";sym:reject",
     [
@@ -1177,5 +1155,30 @@
     ";sym:_data",
     ";sym:_symbol",
     ";sym:bind"
+  ],
+  "keykapp-history-hack?": [
+    ";sym:'line",
+    ";sym:define",
+    [
+      [
+        "j",
+        ";sym:=="
+      ],
+      [
+        "f",
+        ";sym:=="
+      ],
+      [
+        "^[0-9]+ (ek|ak|pk|mk)$",
+        ";sym:match"
+      ]
+    ],
+    [
+      ";sym:'criterion",
+      ";sym:define",
+      ";sym:line",
+      ";sym:criterion"
+    ],
+    ";sym:any?"
   ]
 }
