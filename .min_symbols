@@ -677,24 +677,7 @@
     ],
     ";sym:define",
     ";sym:rhlines",
-    [
-      ";sym:keykapp-history-hack?"
-    ],
-    ";sym:reject",
-    [
-      ";sym:parse-or-empty"
-    ],
-    ";sym:map",
-    ";sym:harvest",
-    ";sym:flatten",
-    ";sym:quote-map",
-    [
-      "$1",
-      ";sym:swap",
-      ";sym:quote",
-      ";sym:interpolate"
-    ],
-    ";sym:map",
+    ";sym:to-keykapp-token-strings",
     ";sym:_ngram-length",
     ";sym:to-windows",
     [
@@ -1180,5 +1163,25 @@
       ";sym:criterion"
     ],
     ";sym:any?"
+  ],
+  "to-keykapp-token-strings": [
+    [
+      ";sym:keykapp-history-hack?"
+    ],
+    ";sym:reject",
+    [
+      ";sym:parse-or-empty"
+    ],
+    ";sym:map",
+    ";sym:harvest",
+    ";sym:flatten",
+    ";sym:quote-map",
+    [
+      "$1",
+      ";sym:swap",
+      ";sym:quote",
+      ";sym:interpolate"
+    ],
+    ";sym:map"
   ]
 }
