@@ -1093,12 +1093,7 @@
   ],
   "keykapp-data-load-and-bind": [
     ";sym:dup",
-    ";sym:to-str",
-    ".json",
-    ";sym:ja",
-    ";sym:keykapp-data-dir",
-    ";sym:fl",
-    ";sym:ja",
+    ";sym:to-keykapp-data-dir-filepath",
     ";sym:fread",
     ";sym:from-json",
     ";sym:w",
