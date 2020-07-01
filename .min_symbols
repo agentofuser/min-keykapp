@@ -1257,5 +1257,32 @@
       ";sym:temp-cached-ngram-histogram"
     ],
     ";sym:keykapp-data-save-and-bind"
+  ],
+  "temp-cached-ngram-histogram-recompute": [
+    [
+      [
+        ";sym:_ngram-length"
+      ],
+      ";sym:define",
+      ";sym:rhlines",
+      ";sym:to-keykapp-token-strings",
+      ";sym:_ngram-length",
+      ";sym:to-windows",
+      [
+        " ",
+        ";sym:join"
+      ],
+      ";sym:map",
+      {},
+      [
+        ";sym:histogram-item-initialize-or-increment"
+      ],
+      ";sym:reduce",
+      [
+        ";sym:temp-cached-ngram-histogram"
+      ],
+      ";sym:keykapp-data-save-and-bind"
+    ],
+    ";sym:loglevel-quietest-dequote-restore"
   ]
 }
