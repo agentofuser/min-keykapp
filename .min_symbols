@@ -1193,5 +1193,46 @@
     ";sym:-",
     ";sym:to-positive-index",
     ";sym:drop"
+  ],
+  "string-remove-outer-pair-of-parentheses": [
+    "s/^\\((.*)\\)$/\\1/",
+    ";sym:regex",
+    ";sym:dequote"
+  ],
+  "min-value-serialize": [
+    "$1",
+    ";sym:swap",
+    ";sym:quote",
+    ";sym:interpolate"
+  ],
+  "to-keykapp-history-line": [
+    ";sym:min-value-serialize",
+    ";sym:string-remove-outer-pair-of-parentheses"
+  ],
+  "kkhd": [
+    "aou/keybase-repos/minkeykapp-full-history"
+  ],
+  "empty": [
+    []
+  ],
+  "empty?": [
+    ";sym:empty",
+    ";sym:=="
+  ],
+  "loglevel-quietest-dequote-restore": [
+    ";sym:loglevel?",
+    [
+      ";sym:_prev-loglevel"
+    ],
+    ";sym:define",
+    "fatal",
+    ";sym:loglevel",
+    ";sym:dequote",
+    ";sym:_prev-loglevel",
+    ";sym:loglevel"
+  ],
+  "gd": [
+    "git diff",
+    ";sym:sh"
   ]
 }
