@@ -920,9 +920,7 @@
     ";sym:last"
   ],
   "get-negative-index": [
-    ";sym:over",
-    ";sym:size",
-    ";sym:+",
+    ";sym:to-positive-index",
     ";sym:get"
   ],
   "kapp-suggestions-weighted": [
@@ -1183,5 +1181,17 @@
       ";sym:interpolate"
     ],
     ";sym:map"
+  ],
+  "to-positive-index": [
+    ";sym:over",
+    ";sym:size",
+    ";sym:+"
+  ],
+  "n-last": [
+    0,
+    ";sym:swap",
+    ";sym:-",
+    ";sym:to-positive-index",
+    ";sym:drop"
   ]
 }
