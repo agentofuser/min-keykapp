@@ -1234,5 +1234,28 @@
   "gd": [
     "git diff",
     ";sym:sh"
+  ],
+  "temp-cached-ngram-histogram-from-history-increment": [
+    [
+      ";sym:_ngram-length"
+    ],
+    ";sym:define",
+    ";sym:rhlines",
+    ";sym:_ngram-length",
+    10,
+    ";sym:*",
+    ";sym:n-last",
+    ";sym:to-keykapp-token-strings",
+    ";sym:_ngram-length",
+    ";sym:n-last",
+    " ",
+    ";sym:join",
+    ";sym:temp-cached-ngram-histogram",
+    ";sym:swap",
+    ";sym:histogram-item-initialize-or-increment",
+    [
+      ";sym:temp-cached-ngram-histogram"
+    ],
+    ";sym:keykapp-data-save-and-bind"
   ]
 }
