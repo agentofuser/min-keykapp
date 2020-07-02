@@ -95,7 +95,8 @@ rhcounts '__dict define
 
 
 ; HACK memoize kapp ngrams
-(()) 'temp-cached-frequent-bigrams define
+(temp-cached-ngram-histogram) keykapp-data-load-and-bind
+
 (temp-cached-frequent-bigrams) keykapp-data-load-and-bind
 
 ; keep result of last temp-kapp-suggestions-recompute

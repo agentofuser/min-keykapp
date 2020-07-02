@@ -672,28 +672,7 @@
     ";sym:reduce"
   ],
   "frequent-ngrams": [
-    [
-      ";sym:_ngram-length"
-    ],
-    ";sym:define",
-    ";sym:rhlines",
-    ";sym:to-keykapp-token-strings",
-    ";sym:_ngram-length",
-    ";sym:to-windows",
-    [
-      " ",
-      ";sym:join"
-    ],
-    ";sym:map",
-    {},
-    [
-      ";sym:histogram-item-initialize-or-increment"
-    ],
-    ";sym:reduce",
-    [
-      ";sym:temp-cached-ngram-histogram"
-    ],
-    ";sym:keykapp-data-save-and-bind",
+    ";sym:pop",
     ";sym:temp-cached-ngram-histogram",
     ";sym:to-pairs",
     [
@@ -1284,5 +1263,44 @@
       ";sym:keykapp-data-save-and-bind"
     ],
     ";sym:loglevel-quietest-dequote-restore"
+  ],
+  "nth-last-index": [
+    0,
+    ";sym:swap",
+    ";sym:-",
+    ";sym:to-positive-index"
+  ],
+  "n-last-drop": [
+    ";sym:nth-last-index",
+    ";sym:take"
+  ],
+  "temp-cached-frequent-bigrams": [
+    []
+  ],
+  "keykapp-data-save-and-bind-seq": [
+    ";sym:quote",
+    [
+      ";sym:_symbol"
+    ],
+    ";sym:define",
+    ";sym:quote",
+    [
+      ";sym:_data"
+    ],
+    ";sym:define",
+    ";sym:_symbol",
+    ";sym:to-keykapp-data-dir-filepath",
+    [
+      ";sym:_destination-filepath"
+    ],
+    ";sym:define",
+    ";sym:_data",
+    ";sym:to-json",
+    ";sym:_destination-filepath",
+    ";sym:fwrite",
+    ";sym:_data",
+    ";sym:quote",
+    ";sym:_symbol",
+    ";sym:bind"
   ]
 }
