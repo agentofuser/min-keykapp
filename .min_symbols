@@ -912,12 +912,13 @@
   ],
   "temp-cached-frequent-bigrams-recompute": [
     2,
+    ";sym:temp-cached-ngram-histogram-recompute",
+    2,
     ";sym:frequent-ngrams",
-    ";sym:quote",
     [
       ";sym:temp-cached-frequent-bigrams"
     ],
-    ";sym:bind"
+    ";sym:keykapp-data-save-and-bind-seq"
   ],
   "temp-kapp-suggestions-recompute": [
     ";sym:kapp-suggestions-weighted",
