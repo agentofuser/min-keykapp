@@ -15,7 +15,7 @@
 ; (quote prepend "tmux send-key -t$1 '$2'" swap interpolate sp) 'pk define
 
 
-("\n" print! kapp-suggestions-do-offer "\n[----\nstack:\n" print! get-stack print! "\n]----\n" print! "\n--------------------------------\n[$1]\nλ " (. "^/Users/hsribei" "~" replace) => %) 'prompt bind
+("\n[----\nstack:\n" print! get-stack print! "\n]----\n" print! "\n" print! kapp-suggestions-do-offer "\n--------------------------------\n[$1]\nλ " (. "^/Users/hsribei" "~" replace) => %) 'prompt bind
 
 
 (quote "\n" swap append "" join print) 'println define
