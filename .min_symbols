@@ -1303,5 +1303,19 @@
     ";sym:quote",
     ";sym:_symbol",
     ";sym:bind"
+  ],
+  "kapp-history-token-strings-n-last": [
+    [
+      ";sym:_ngram-length"
+    ],
+    ";sym:define",
+    ";sym:rhlines",
+    ";sym:_ngram-length",
+    10,
+    ";sym:*",
+    ";sym:n-last",
+    ";sym:to-keykapp-token-strings",
+    ";sym:_ngram-length",
+    ";sym:n-last"
   ]
 }
