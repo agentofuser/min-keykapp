@@ -1317,5 +1317,24 @@
     ";sym:to-keykapp-token-strings",
     ";sym:_ngram-length",
     ";sym:n-last"
+  ],
+  "keybase-git-add-commit-push": [
+    ";sym:chd",
+    [
+      "hsribei-dotfiles",
+      "random"
+    ],
+    "aou/keybase-repos",
+    ";sym:cl",
+    ";sym:fl",
+    [
+      ";sym:cl",
+      ";sym:gaacu",
+      ";sym:gp",
+      ";sym:cd"
+    ],
+    ";sym:foreach",
+    ";sym:cd",
+    ";sym:cd"
   ]
 }
