@@ -170,7 +170,7 @@
     ";sym:sp"
   ],
   "ydla": [
-    "youtube-dl -i --no-playlist --download-archive youtube-dl-archive.txt --write-info-json --write-description --write-annotations --write-all-thumbnails --embed-thumbnail --add-metadata --xattrs --restrict-filenames -v --extract-audio --audio-format mp3 --audio-quality 0"
+    "youtube-dl -i --no-playlist --download-archive youtube-dl-archive.txt --add-metadata --xattrs --restrict-filenames -v --extract-audio --audio-format mp3 --audio-quality 0"
   ],
   "dla": [
     ";sym:ydla",
@@ -675,12 +675,6 @@
     ";sym:pop",
     ";sym:temp-cached-ngram-histogram",
     ";sym:to-pairs",
-    [
-      ";sym:first",
-      2,
-      ";sym:<"
-    ],
-    ";sym:reject",
     [
       ";sym:first",
       ";sym:swap",
@@ -1433,5 +1427,20 @@
       ";sym:fla"
     ],
     ";sym:if"
+  ],
+  "temp-cached-frequent-bigrams-from-history-increment": [
+    ";sym:temp-cached-frequent-bigrams",
+    2,
+    ";sym:kapp-history-token-strings-n-last",
+    [
+      ";sym:eval"
+    ],
+    ";sym:map",
+    ";sym:flatten",
+    ";sym:sorted-counter-list-item-initialize-or-increment",
+    [
+      ";sym:temp-cached-frequent-bigrams"
+    ],
+    ";sym:keykapp-data-save-and-bind-seq"
   ]
 }
