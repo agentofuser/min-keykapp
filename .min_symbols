@@ -887,7 +887,6 @@
     ";sym:reject",
     -1,
     ";sym:get-negative-index",
-    ";sym:println",
     ";sym:parse",
     ";sym:quote-map",
     ";sym:last"
@@ -952,7 +951,7 @@
     ";sym:get",
     ";sym:last",
     ";sym:dup",
-    ";sym:to-str",
+    ";sym:to-keykapp-history-line",
     "\n",
     ";sym:ja",
     ";sym:kkh",
@@ -1442,5 +1441,8 @@
       ";sym:temp-cached-frequent-bigrams"
     ],
     ";sym:keykapp-data-save-and-bind-seq"
+  ],
+  "qm": [
+    ";sym:quote-map"
   ]
 }
