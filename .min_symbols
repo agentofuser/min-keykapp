@@ -1473,5 +1473,34 @@
       ]
     ],
     ";sym:case"
+  ],
+  "seq-with-indexes": [
+    ";sym:dup",
+    ";sym:size",
+    ";sym:range-from-one",
+    [
+      ";sym:pred"
+    ],
+    ";sym:map",
+    ";sym:fl",
+    ";sym:w",
+    [
+      ";sym:_list"
+    ],
+    ";sym:define",
+    [
+      [
+        ";sym:_index"
+      ],
+      ";sym:define",
+      [],
+      ";sym:_index",
+      ";sym:fla",
+      ";sym:_list",
+      ";sym:_index",
+      ";sym:get",
+      ";sym:fla"
+    ],
+    ";sym:map"
   ]
 }
