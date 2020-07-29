@@ -14,8 +14,12 @@
 
 ; (quote prepend "tmux send-key -t$1 '$2'" swap interpolate sp) 'pk define
 
+("\n[----\nstack:\n" print! get-stack print! "\n]----\n\n" print!) 'stack-print define
 
-("\n[----\nstack:\n" print! get-stack print! "\n]----\n" print! "\n" print! temp-cached-frequent-bigrams-from-history-increment kapp-suggestions-do-offer "\n--------------------------------\n[$1]\nλ " (. "^/Users/hsribei" "~" replace) => %) 'prompt bind
+(stack-print temp-cached-frequent-bigrams-from-history-increment kapp-suggestions-do-offer kapp-suggestions-keybindings-listen) 'keykapp-event-loop-run define
+
+
+(keykapp-event-loop-run "\n--------------------------------\n[$1]\nλ " (. "^/Users/hsribei" "~" replace) => %) 'prompt bind
 
 
 (quote "\n" swap append "" join print) 'println define

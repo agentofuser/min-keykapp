@@ -1444,5 +1444,34 @@
   ],
   "qm": [
     ";sym:quote-map"
+  ],
+  "kapp-suggestions-keybindings-listen": [
+    ";sym:getchr",
+    ";sym:chr",
+    [
+      [
+        [
+          "j",
+          ";sym:=="
+        ],
+        [
+          0,
+          ";sym:pk",
+          ";sym:keykapp-event-loop-run"
+        ]
+      ],
+      [
+        [
+          "f",
+          ";sym:=="
+        ],
+        [
+          1,
+          ";sym:pk",
+          ";sym:keykapp-event-loop-run"
+        ]
+      ]
+    ],
+    ";sym:case"
   ]
 }
