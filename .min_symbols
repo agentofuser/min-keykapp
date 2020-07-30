@@ -931,7 +931,9 @@
     [
       ";sym:last",
       ";sym:quote",
+      ";sym:keypad-switch-names-in-priority-order",
       ";sym:_i",
+      ";sym:get",
       ";sym:swap",
       ";sym:prepend",
       ";sym:_i",
@@ -1448,31 +1450,7 @@
   "kapp-suggestions-keybindings-listen": [
     ";sym:getchr",
     ";sym:chr",
-    [
-      [
-        [
-          "j",
-          ";sym:=="
-        ],
-        [
-          0,
-          ";sym:pk",
-          ";sym:keykapp-event-loop-run"
-        ]
-      ],
-      [
-        [
-          "f",
-          ";sym:=="
-        ],
-        [
-          1,
-          ";sym:pk",
-          ";sym:keykapp-event-loop-run"
-        ]
-      ]
-    ],
-    ";sym:case"
+    ";sym:kapp-suggestions-keybinding-perform-from-char"
   ],
   "seq-with-indexes": [
     ";sym:dup",
@@ -1502,5 +1480,48 @@
       ";sym:fla"
     ],
     ";sym:map"
+  ],
+  "kapp-suggestions-keybinding-from-index-and-char": [
+    ";sym:dup",
+    ";sym:first",
+    [
+      ";sym:_index"
+    ],
+    ";sym:define",
+    ";sym:last",
+    [
+      ";sym:_switch-name"
+    ],
+    ";sym:define",
+    ";sym:_switch-name",
+    [
+      ";sym:=="
+    ],
+    ";sym:prepend",
+    ";sym:_index",
+    [
+      ";sym:pk",
+      ";sym:keykapp-event-loop-run"
+    ],
+    ";sym:prepend",
+    [],
+    ";sym:prepend",
+    ";sym:prepend"
+  ],
+  "kapp-suggestions-keybinding-perform-from-char": [
+    "jfkdls",
+    "",
+    ";sym:split",
+    ";sym:seq-with-indexes",
+    [
+      ";sym:kapp-suggestions-keybinding-from-index-and-char"
+    ],
+    ";sym:map",
+    ";sym:case"
+  ],
+  "keypad-switch-names-in-priority-order": [
+    "jfkdls",
+    "",
+    ";sym:split"
   ]
 }
