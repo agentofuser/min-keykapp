@@ -995,7 +995,6 @@
     ";sym:pk"
   ],
   "oa": [
-    ";sym:to-str",
     "/Applications/",
     ";sym:jp",
     ".app",
@@ -1523,5 +1522,9 @@
     "jfkdls",
     "",
     ";sym:split"
+  ],
+  "macos-sleep": [
+    "pmset sleepnow",
+    ";sym:sh"
   ]
 }
