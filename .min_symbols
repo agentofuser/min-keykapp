@@ -1526,5 +1526,62 @@
   "macos-sleep": [
     "pmset sleepnow",
     ";sym:sh"
+  ],
+  "mpvs": [
+    "mpv",
+    "--sub-font-size=40",
+    ";sym:js",
+    ";sym:fl",
+    ";sym:js",
+    ";sym:sh"
+  ],
+  "macos-lock": [
+    "pmset displaysleepnow",
+    ";sym:sh"
+  ],
+  "kapp-history-literal-strings": [
+    ";sym:rhlines",
+    ";sym:to-keykapp-token-strings",
+    [
+      ";sym:eval"
+    ],
+    ";sym:map",
+    [
+      ";sym:to-json"
+    ],
+    ";sym:map",
+    [
+      ";sym:",
+      ";sym:match"
+    ],
+    ";sym:reject",
+    [
+      ";sym:from-json"
+    ],
+    ";sym:map",
+    ";sym:flatten",
+    ";sym:harvest",
+    [
+      ";sym:string?"
+    ],
+    ";sym:filter"
+  ],
+  "kapp-history-literal-strings-search-case-insensitive": [
+    ";sym:quote",
+    "/$1/i",
+    ";sym:swap",
+    ";sym:interpolate",
+    ";sym:quote",
+    [
+      ";sym:regex",
+      [
+        ""
+      ],
+      ";sym:!="
+    ],
+    ";sym:concat",
+    ";sym:kapp-history-literal-strings",
+    ";sym:swap",
+    ";sym:filter"
   ]
 }
