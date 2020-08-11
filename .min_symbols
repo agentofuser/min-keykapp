@@ -1551,7 +1551,7 @@
     ],
     ";sym:map",
     [
-      ";sym:",
+      ";sym:min-serialized-symbol-prefix",
       ";sym:match"
     ],
     ";sym:reject",
@@ -1583,5 +1583,16 @@
     ";sym:kapp-history-literal-strings",
     ";sym:swap",
     ";sym:filter"
+  ],
+  "hgrep": [
+    ";sym:kapp-history-literal-strings-search-case-insensitive"
+  ],
+  "min-serialized-symbol-prefix": [
+    [
+      ";sy",
+      "m:"
+    ],
+    "",
+    ";sym:join"
   ]
 }
