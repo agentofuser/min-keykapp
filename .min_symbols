@@ -1452,33 +1452,41 @@
     ";sym:kapp-suggestions-keybinding-perform-from-char"
   ],
   "seq-with-indexes": [
-    ";sym:dup",
-    ";sym:size",
-    ";sym:range-from-one",
     [
-      ";sym:pred"
+      ";sym:size",
+      0,
+      ";sym:>"
     ],
-    ";sym:map",
-    ";sym:fl",
-    ";sym:w",
     [
-      ";sym:_list"
-    ],
-    ";sym:define",
-    [
+      ";sym:dup",
+      ";sym:size",
+      ";sym:range-from-one",
       [
-        ";sym:_index"
+        ";sym:pred"
+      ],
+      ";sym:map",
+      ";sym:fl",
+      ";sym:w",
+      [
+        ";sym:_list"
       ],
       ";sym:define",
-      [],
-      ";sym:_index",
-      ";sym:fla",
-      ";sym:_list",
-      ";sym:_index",
-      ";sym:get",
-      ";sym:fla"
+      [
+        [
+          ";sym:_index"
+        ],
+        ";sym:define",
+        [],
+        ";sym:_index",
+        ";sym:fla",
+        ";sym:_list",
+        ";sym:_index",
+        ";sym:get",
+        ";sym:fla"
+      ],
+      ";sym:map"
     ],
-    ";sym:map"
+    ";sym:when"
   ],
   "kapp-suggestions-keybinding-from-index-and-char": [
     ";sym:dup",
