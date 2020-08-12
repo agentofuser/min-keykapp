@@ -1602,5 +1602,28 @@
     ],
     "",
     ";sym:join"
+  ],
+  "stack-print": [
+    "\n[----\nstack:\n",
+    ";sym:print!",
+    ";sym:get-stack",
+    ";sym:seq-with-indexes",
+    [
+      ";sym:println!"
+    ],
+    ";sym:foreach",
+    "\n]----\n\n",
+    ";sym:print!"
+  ],
+  "aouvc-link-new": [
+    ";sym:quote",
+    ";sym:prepend",
+    ";sym:wrap-in-single-quotes",
+    ";sym:dequote",
+    ";sym:js",
+    "node ~/.local/src/github.com/agentofuser/aou.vc/node_modules/.bin/netlify-shortener",
+    ";sym:swap",
+    ";sym:js",
+    ";sym:sh"
   ]
 }
