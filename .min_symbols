@@ -1638,5 +1638,29 @@
     ";sym:define",
     ";sym:clear-stack",
     ";sym:_stack-prev"
+  ],
+  "keykapp-data-saved-symbols": [
+    ";sym:.",
+    ";sym:keykapp-data-dir",
+    ";sym:cd",
+    ";sym:.",
+    ";sym:ls",
+    [
+      "\\.json$",
+      ";sym:match"
+    ],
+    ";sym:filter",
+    [
+      "/",
+      ";sym:split",
+      ";sym:last",
+      ".json",
+      "",
+      ";sym:replace",
+      ";sym:to-sym"
+    ],
+    ";sym:map",
+    ";sym:swap",
+    ";sym:cd"
   ]
 }
