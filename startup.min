@@ -65,7 +65,7 @@
 'HOME get-env "/" ja 'homedir define
 (homedir) 'hd define
 
-(homedir ".local/src/github.com/agentofuser/minkeykapp/" ja) 'kkd define
+(homedir "kk/" ja) 'kkd define
 
 (kkd "startup.min" ja) 'kkb define
 
@@ -99,8 +99,6 @@ rhcounts '__dict define
 
 
 ; HACK memoize kapp ngrams
-(temp-cached-ngram-histogram) keykapp-data-load-and-bind
-
 (temp-cached-frequent-bigrams) keykapp-data-load-and-bind
 
 ; keep result of last temp-kapp-suggestions-recompute

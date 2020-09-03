@@ -1,0 +1,4 @@
+[submodule "min"]
+	path = min
+	url = git@github.com:agentofuser/min.git
+	branch = minkeykapp
