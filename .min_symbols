@@ -1663,4 +1663,40 @@
     ";sym:swap",
     ";sym:cd"
   ],
+  "is-single-quoted-symbol": [
+    ";sym:quote",
+    [
+      ";sym:_value"
+    ],
+    ";sym:define",
+    [
+      ";sym:_value",
+      ";sym:quotation?"
+    ],
+    [
+      ";sym:_value",
+      ";sym:size",
+      1,
+      ";sym:==",
+      ";sym:_value",
+      ";sym:is-quotation-starting-with-unquoted-symbol",
+      ";sym:and"
+    ],
+    ";sym:dequote-and"
+  ],
+  "is-quotation-starting-with-unquoted-symbol": [
+    ";sym:to-json",
+    "\n",
+    "",
+    ";sym:replace",
+    " ",
+    "",
+    ";sym:replace",
+    "\\[\"",
+    ";sym:min-serialized-symbol-prefix",
+    ";sym:ja",
+    "^",
+    ";sym:jp",
+    ";sym:match"
+  ]
 }
