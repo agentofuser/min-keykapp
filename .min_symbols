@@ -859,7 +859,7 @@
   ],
   "keykapp-history-backup": [
     ";sym:chd",
-    "aou/keybase-repos/minkeykapp-full-history",
+    "keykapp/minkeykapp-full-history",
     ";sym:cd",
     ";sym:gaacu",
     ";sym:gp",
