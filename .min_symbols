@@ -1699,13 +1699,6 @@
     ";sym:jp",
     ";sym:match"
   ],
-  "is-value-seq": [
-    [
-      ";sym:is-single-quoted-symbol"
-    ],
-    ";sym:any?",
-    ";sym:not"
-  ],
   "is-dequotable-to-inert-values": [
     [
       ";sym:is-single-quoted-symbol"
@@ -1725,5 +1718,16 @@
       ";sym:map"
     ],
     ";sym:when"
+  ],
+  "to-functor": [
+    [
+      ";sym:quotation?",
+      ";sym:not"
+    ],
+    [
+      ";sym:quote"
+    ],
+    ";sym:when",
+    ";sym:to-inert-value-seq"
   ]
 }
