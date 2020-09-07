@@ -790,7 +790,7 @@
   ],
   "gpkkh": [
     ";sym:chd",
-    "aou/keybase-repos/minkeykapp-full-history",
+    ";sym:kkhd",
     ";sym:cd",
     ";sym:gaacu",
     ";sym:gp",
@@ -859,7 +859,7 @@
   ],
   "keykapp-history-backup": [
     ";sym:chd",
-    "keykapp/minkeykapp-full-history",
+    ";sym:kkhd",
     ";sym:cd",
     ";sym:gaacu",
     ";sym:gp",
@@ -1009,7 +1009,7 @@
   ],
   "keykapp-history-git-log-patch": [
     ";sym:chd",
-    "aou/keybase-repos/minkeykapp-full-history",
+    ";sym:kkhd",
     ";sym:cd",
     ";sym:glp",
     ";sym:cd"
@@ -1184,7 +1184,7 @@
     ";sym:string-remove-outer-pair-of-parentheses"
   ],
   "kkhd": [
-    "aou/keybase-repos/minkeykapp-full-history"
+    "keykapp/minkeykapp-full-history"
   ],
   "empty": [
     []
