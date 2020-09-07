@@ -1698,5 +1698,32 @@
     "^",
     ";sym:jp",
     ";sym:match"
+  ],
+  "is-value-seq": [
+    [
+      ";sym:is-single-quoted-symbol"
+    ],
+    ";sym:any?",
+    ";sym:not"
+  ],
+  "is-dequotable-to-inert-values": [
+    [
+      ";sym:is-single-quoted-symbol"
+    ],
+    ";sym:any?",
+    ";sym:not"
+  ],
+  "to-inert-value-seq": [
+    ";sym:quote-map",
+    [
+      ";sym:is-dequotable-to-inert-values"
+    ],
+    [
+      [
+        ";sym:dequote"
+      ],
+      ";sym:map"
+    ],
+    ";sym:when"
   ]
 }
