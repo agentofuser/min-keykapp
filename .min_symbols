@@ -821,7 +821,7 @@
     ";sym:_kapp-log-tail",
     ";sym:size",
     ";sym:succ",
-    ";sym:temp-cached-frequent-ngrams",
+    ";sym:temp-cached-frequent-ngrams-length-filter",
     [
       ";sym:last",
       ";sym:quote-map",
@@ -1729,5 +1729,20 @@
     ],
     ";sym:when",
     ";sym:to-inert-value-seq"
+  ],
+  "temp-cached-frequent-ngrams-length-filter": [
+    ";sym:quote",
+    [
+      ";sym:_length"
+    ],
+    ";sym:define",
+    ";sym:temp-cached-frequent-bigrams",
+    [
+      ";sym:last",
+      ";sym:size",
+      ";sym:_length",
+      ";sym:=="
+    ],
+    ";sym:filter"
   ]
 }
