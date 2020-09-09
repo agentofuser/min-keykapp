@@ -1735,7 +1735,7 @@
       ";sym:_length"
     ],
     ";sym:define",
-    ";sym:temp-cached-frequent-bigrams",
+    ";sym:temp-cached-frequent-ngrams",
     [
       ";sym:last",
       ";sym:size",
