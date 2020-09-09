@@ -16,7 +16,7 @@
 
 ("\n[----\nstack:\n" print! get-stack print! "\n]----\n\n" print!) 'stack-print define
 
-(stack-print temp-cached-frequent-bigrams-from-history-increment kapp-suggestions-do-offer kapp-suggestions-keybindings-listen) 'keykapp-event-loop-run define
+(stack-print temp-cached-frequent-ngrams-from-history-increment kapp-suggestions-do-offer kapp-suggestions-keybindings-listen) 'keykapp-event-loop-run define
 
 
 (keykapp-event-loop-run "\n--------------------------------\n[$1]\nλ " (. "^/Users/hsribei" "~" replace) => %) 'prompt bind
@@ -99,7 +99,6 @@ rhcounts '__dict define
 
 
 ; HACK memoize kapp ngrams
-(temp-cached-frequent-bigrams) keykapp-data-load-and-bind
 (temp-cached-frequent-ngrams) keykapp-data-load-and-bind
 
 ; keep result of last temp-kapp-suggestions-recompute
