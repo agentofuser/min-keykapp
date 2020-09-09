@@ -900,8 +900,7 @@
     ";sym:kapp-sequence-frequent-successor-suggestions"
   ],
   "temp-cached-frequent-ngrams": [
-    ";sym:pop",
-    ";sym:temp-cached-frequent-bigrams"
+    []
   ],
   "temp-cached-frequent-bigrams-recompute": [
     2,
@@ -1744,5 +1743,25 @@
       ";sym:=="
     ],
     ";sym:filter"
+  ],
+  "temp-cached-frequent-ngrams-from-history-increment-length-k": [
+    ";sym:quote",
+    [
+      ";sym:_kgram-length"
+    ],
+    ";sym:define",
+    ";sym:temp-cached-frequent-ngrams",
+    ";sym:_kgram-length",
+    ";sym:kapp-history-token-strings-n-last",
+    [
+      ";sym:eval"
+    ],
+    ";sym:map",
+    ";sym:flatten",
+    ";sym:sorted-counter-list-item-initialize-or-increment",
+    [
+      ";sym:temp-cached-frequent-ngrams"
+    ],
+    ";sym:keykapp-data-save-and-bind-seq"
   ]
 }
