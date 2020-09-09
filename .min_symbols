@@ -1763,5 +1763,16 @@
       ";sym:temp-cached-frequent-ngrams"
     ],
     ";sym:keykapp-data-save-and-bind-seq"
+  ],
+  "keykapp-max-ngram-length": [
+    8
+  ],
+  "temp-cached-frequent-ngrams-from-history-increment": [
+    ";sym:keykapp-max-ngram-length",
+    ";sym:range-from-one",
+    [
+      ";sym:temp-cached-frequent-ngrams-from-history-increment-length-k"
+    ],
+    ";sym:foreach"
   ]
 }
