@@ -1,5 +1,7 @@
-(get-stack (string "\n" suffix print!) foreach) (stack-print) lambda
+(quote string dup length 2 - 1 swap substr) (serialize) lambda
 
-(stack-print "[$1]$$ " (.) => %) (stack-prompt) lambda
+(get-stack (serialize "> " prefix "\n" suffix print!) foreach) (stack-print) lambda
+
+("\n[----\nstack:\n" print! stack-print "\n]----\n\n" print! "[$1]$$ " (.) => %) (stack-prompt) lambda
 
 (stack-prompt) (prompt) lambda
