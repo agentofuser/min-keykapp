@@ -1,6 +1,40 @@
-(quote string dup length 2 - 1 swap substr) (serialize) lambda
+(
+    quote
+    string
+    dup
+    length
+    2
+    -
+    1
+    swap
+    substr
+)
+(serialize)
+lambda
 
-(get-stack (serialize "> " prefix "\n" suffix print!) foreach) (stack-print) lambda
+
+(
+    serialize
+    quote
+    "> $1\n"
+    swap
+    interpolate
+)
+(stack-item-format)
+lambda
+
+
+(
+    get-stack
+    (
+        stack-item-format
+        print!
+    )
+    foreach
+)
+(stack-print)
+lambda
+
 
 (
     "\n[----\nstack:\n"
@@ -11,7 +45,12 @@
     "[$1]$$ "
     (.)
     apply
-    %
-) (stack-prompt) lambda
+    interpolate
+)
+(stack-prompt)
+lambda
 
-(stack-prompt) (prompt) lambda
+
+(stack-prompt)
+(prompt)
+lambda
