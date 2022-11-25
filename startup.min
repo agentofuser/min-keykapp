@@ -1,10 +1,12 @@
 (
     quote
     string
+
     dup
     length
     2
     -
+
     1
     swap
     substr
@@ -15,6 +17,7 @@ lambda
 
 (
     serialize
+
     quote
     "> $1\n"
     swap
@@ -39,9 +42,12 @@ lambda
 (
     "\n[----\nstack:\n"
     print!
+
     stack-print
+
     "\n]----\n\n"
     print!
+
     "[$1]$$ "
     (.)
     apply
