@@ -2,6 +2,16 @@
 
 (get-stack (serialize "> " prefix "\n" suffix print!) foreach) (stack-print) lambda
 
-("\n[----\nstack:\n" print! stack-print "\n]----\n\n" print! "[$1]$$ " (.) => %) (stack-prompt) lambda
+(
+    "\n[----\nstack:\n"
+    print!
+    stack-print
+    "\n]----\n\n"
+    print!
+    "[$1]$$ "
+    (.)
+    apply
+    %
+) (stack-prompt) lambda
 
 (stack-prompt) (prompt) lambda
