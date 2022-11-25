@@ -60,3 +60,45 @@ lambda
 (stack-prompt)
 (prompt)
 lambda
+
+
+(
+   (HOME)
+   get-env
+   ".minrc"
+   ()
+   prepend
+   prepend
+   join-path
+)
+dequote
+(minrc-path)
+define
+
+
+(
+    "\n"
+    suffix
+    print!
+)
+(println!)
+lambda
+
+
+; FIXME: Works if typed unquoted on repl but not as a lambda.
+;        Maybe because eval is scoped to empty substack instead of the
+;        globally-scoped stack? So the ROOT namespace isn't updated
+;        by symbols getting redefined when minrc gets eval'ed again?
+;        Might be also the fact that `lambda` and `define` only work
+;        the first time but for redefining symbols one has to use
+;        `lambda-bind` and `bind`, respectively?
+(
+   minrc-path
+   fread
+   eval
+
+   "INFO: minrc reloaded"
+   println!
+)
+(minrc-reload)
+lambda
