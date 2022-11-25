@@ -10,12 +10,6 @@
 ; (quote-define) 'redefine define
 
 
-(quote "tmux send-key -t0 '$1'" swap interpolate system pop) 'k define
-
-; (quote prepend "tmux send-key -t$1 '$2'" swap interpolate sp) 'pk define
-
-("\n[----\nstack:\n" print! get-stack print! "\n]----\n\n" print!) 'stack-print define
-
 (stack-print temp-cached-frequent-ngrams-from-history-increment kapp-suggestions-do-offer kapp-suggestions-keybindings-listen) 'keykapp-event-loop-run define
 
 
