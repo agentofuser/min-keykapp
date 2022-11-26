@@ -35,7 +35,7 @@ lambda
     )
     foreach
 )
-(stack-print)
+(stack-print!)
 lambda
 
 
@@ -43,7 +43,7 @@ lambda
     "\n[----\nstack:\n"
     print!
 
-    stack-print
+    stack-print!
 
     "\n]----\n\n"
     print!
