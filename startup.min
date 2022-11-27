@@ -110,6 +110,7 @@ lambda
 (minrc-reload)
 lambda
 
+
 ; import all stored symbols from ~/.min_symbols
 homedir
 ".min_symbols"
@@ -123,3 +124,13 @@ from-json
 define
 (min-symbols)
 import
+
+
+
+; HACK backwards-compatible homedir with trailing slash that old
+; min-keykapp uses
+homedir
+"/"
+suffix
+(hd)
+define

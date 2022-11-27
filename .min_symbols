@@ -16,6 +16,7 @@
   "to-str": [
     "$1",
     ";sym:swap",
+    ";sym:quote",
     ";sym:interpolate"
   ],
   "to-sym": [
@@ -512,31 +513,16 @@
     ";sym:times"
   ],
   "range-from-one": [
-    ";sym:'_count",
-    ";sym:define",
-    1,
-    ";sym:'_i",
+    [
+      ";sym:_last"
+    ],
     ";sym:define",
     [
-      []
+      1,
+      ";sym:_last"
     ],
-    ";sym:'_list",
-    ";sym:define",
-    [
-      ";sym:_i",
-      ";sym:_list",
-      ";sym:append",
-      ";sym:quote",
-      ";sym:'_list",
-      ";sym:bind",
-      ";sym:_i",
-      ";sym:succ",
-      ";sym:'_i",
-      ";sym:bind"
-    ],
-    ";sym:_count",
-    ";sym:times",
-    ";sym:_list"
+    ";sym:apply",
+    ";sym:range"
   ],
   "range-to-one": [
     ";sym:range-from-one",
