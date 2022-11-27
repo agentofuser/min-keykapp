@@ -65,10 +65,17 @@ lambda
 (
    (HOME)
    get-env
-   ".minrc"
-   ()
-   prepend
-   prepend
+)
+(homedir)
+lambda
+
+
+(
+    (
+       homedir
+       ".minrc"
+    )
+    apply
    join-path
 )
 dequote
@@ -102,3 +109,17 @@ lambda
 )
 (minrc-reload)
 lambda
+
+; import all stored symbols from ~/.min_symbols
+homedir
+".min_symbols"
+()
+prepend
+prepend
+join-path
+fread
+from-json
+(min-symbols)
+define
+(min-symbols)
+import
