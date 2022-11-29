@@ -1374,18 +1374,14 @@
     ],
     [
       ";sym:_sorted-counter-list",
-      ";sym:my-debug",
       [
         1,
         ";sym:_item"
       ],
       ";sym:apply",
-      ";sym:my-debug",
-      ";sym:fla",
-      ";sym:my-debug"
+      ";sym:fla"
     ],
-    ";sym:if",
-    ";sym:my-debug"
+    ";sym:if"
   ],
   "temp-cached-frequent-bigrams-from-history-increment": [
     ";sym:temp-cached-frequent-bigrams",
@@ -1718,7 +1714,6 @@
     ";sym:map",
     ";sym:flatten",
     ";sym:sorted-counter-list-item-initialize-or-increment",
-    ";sym:my-debug",
     [
       ";sym:temp-cached-frequent-ngrams"
     ],
