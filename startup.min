@@ -146,3 +146,8 @@ define
 )
 (my-debug)
 lambda
+
+
+; keep result of last temp-kapp-suggestions-recompute
+; this is currently done on every new prompt rendering
+() (temp-kapp-suggestions) define

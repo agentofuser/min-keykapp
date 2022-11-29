@@ -881,7 +881,6 @@
   ],
   "temp-kapp-suggestions-recompute": [
     ";sym:kapp-suggestions-weighted",
-    ";sym:quote",
     [
       ";sym:temp-kapp-suggestions"
     ],
