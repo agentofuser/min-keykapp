@@ -994,7 +994,6 @@
     ";sym:to-keykapp-data-dir-filepath",
     ";sym:fread",
     ";sym:from-json",
-    ";sym:w",
     ";sym:swap",
     ";sym:bind"
   ],
@@ -1054,7 +1053,6 @@
     ";sym:suffix"
   ],
   "keykapp-data-save-and-bind": [
-    ";sym:quote",
     [
       ";sym:_symbol"
     ],
@@ -1239,12 +1237,10 @@
     []
   ],
   "keykapp-data-save-and-bind-seq": [
-    ";sym:quote",
     [
       ";sym:_symbol"
     ],
     ";sym:define",
-    ";sym:quote",
     [
       ";sym:_data"
     ],
@@ -1260,7 +1256,6 @@
     ";sym:_destination-filepath",
     ";sym:fwrite",
     ";sym:_data",
-    ";sym:quote",
     ";sym:_symbol",
     ";sym:bind"
   ],
@@ -1298,25 +1293,21 @@
     ";sym:cd"
   ],
   "sorted-counter-list-item-initialize-or-increment": [
-    ";sym:quote",
     [
       ";sym:_item"
     ],
     ";sym:define",
-    ";sym:quote",
     [
       ";sym:_sorted-counter-list"
     ],
     ";sym:define",
+    ";sym:_sorted-counter-list",
     [
-      ";sym:_sorted-counter-list",
-      [
-        ";sym:last",
-        ";sym:_item",
-        ";sym:=="
-      ],
-      ";sym:find"
+      ";sym:last",
+      ";sym:_item",
+      ";sym:=="
     ],
+    ";sym:find",
     [
       ";sym:_item-index"
     ],
@@ -1341,7 +1332,6 @@
         ";sym:_item"
       ],
       ";sym:apply",
-      ";sym:quote",
       [
         ";sym:_counter-item"
       ],
@@ -1349,7 +1339,6 @@
       ";sym:_sorted-counter-list",
       ";sym:_item-index",
       ";sym:remove",
-      ";sym:quote",
       [
         ";sym:_sorted-counter-list"
       ],
@@ -1385,14 +1374,18 @@
     ],
     [
       ";sym:_sorted-counter-list",
+      ";sym:my-debug",
       [
         1,
         ";sym:_item"
       ],
       ";sym:apply",
-      ";sym:fla"
+      ";sym:my-debug",
+      ";sym:fla",
+      ";sym:my-debug"
     ],
-    ";sym:if"
+    ";sym:if",
+    ";sym:my-debug"
   ],
   "temp-cached-frequent-bigrams-from-history-increment": [
     ";sym:temp-cached-frequent-bigrams",
@@ -1712,7 +1705,6 @@
     ";sym:filter"
   ],
   "temp-cached-frequent-ngrams-from-history-increment-length-k": [
-    ";sym:quote",
     [
       ";sym:_kgram-length"
     ],
@@ -1726,13 +1718,14 @@
     ";sym:map",
     ";sym:flatten",
     ";sym:sorted-counter-list-item-initialize-or-increment",
+    ";sym:my-debug",
     [
       ";sym:temp-cached-frequent-ngrams"
     ],
     ";sym:keykapp-data-save-and-bind-seq"
   ],
   "keykapp-max-ngram-length": [
-    8
+    3
   ],
   "temp-cached-frequent-ngrams-from-history-increment": [
     ";sym:keykapp-max-ngram-length",

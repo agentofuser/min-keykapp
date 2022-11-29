@@ -137,3 +137,12 @@ define
 
 ; HACK memoize kapp ngrams
 (temp-cached-frequent-ngrams) keykapp-data-load-and-bind
+
+
+(
+    dup
+    serialize
+    println!
+)
+(my-debug)
+lambda
