@@ -16,7 +16,6 @@
   "to-str": [
     "$1",
     ";sym:swap",
-    ";sym:quote",
     ";sym:interpolate"
   ],
   "to-sym": [
@@ -471,9 +470,6 @@
     ],
     ";sym:foreach"
   ],
-  "fl": [
-    ";sym:swap"
-  ],
   "minutes-left-say": [
     ";sym:to-json",
     "left",
@@ -543,14 +539,14 @@
   ],
   "pbcopy": [
     "echo '$1' | pbcopy",
-    ";sym:fl",
+    ";sym:swap",
     ";sym:w",
     ";sym:interpolate",
     ";sym:sh-quiet"
   ],
   "sh1": [
     ";sym:to-str",
-    ";sym:fl",
+    ";sym:swap",
     ";sym:w",
     ";sym:wrap-in-single-quotes",
     ";sym:u",
@@ -597,7 +593,7 @@
       ";sym:_window-size",
       ";sym:take",
       ";sym:_windows",
-      ";sym:fl",
+      ";sym:swap",
       ";sym:w",
       ";sym:concat",
       ";sym:w",
@@ -808,7 +804,7 @@
       ";sym:last",
       ";sym:quote-map",
       ";sym:last",
-      ";sym:fl",
+      ";sym:swap",
       ";sym:first",
       [],
       ";sym:prepend",
@@ -999,7 +995,7 @@
     ";sym:fread",
     ";sym:from-json",
     ";sym:w",
-    ";sym:fl",
+    ";sym:swap",
     ";sym:bind"
   ],
   "hdcd": [
@@ -1054,7 +1050,7 @@
     ".json",
     ";sym:suffix",
     ";sym:keykapp-data-dir",
-    ";sym:fl",
+    ";sym:swap",
     ";sym:suffix"
   ],
   "keykapp-data-save-and-bind": [
@@ -1102,7 +1098,7 @@
       ";sym:'criterion",
       ";sym:define",
       ";sym:line",
-      ";sym:criterion"
+      ";sym:criterion!"
     ],
     ";sym:any?"
   ],
@@ -1290,7 +1286,7 @@
     ],
     "aou/keybase-repos",
     ";sym:cl",
-    ";sym:fl",
+    ";sym:swap",
     [
       ";sym:cl",
       ";sym:gaacu",
@@ -1435,7 +1431,7 @@
         ";sym:pred"
       ],
       ";sym:map",
-      ";sym:fl",
+      ";sym:swap",
       ";sym:w",
       [
         ";sym:_list"
@@ -1509,7 +1505,7 @@
     "mpv",
     "--sub-font-size=40",
     ";sym:js",
-    ";sym:fl",
+    ";sym:swap",
     ";sym:js",
     ";sym:sh"
   ],

@@ -126,7 +126,6 @@ define
 import
 
 
-
 ; HACK backwards-compatible homedir with trailing slash that old
 ; min-keykapp uses
 homedir
@@ -134,3 +133,7 @@ homedir
 suffix
 (hd)
 define
+
+
+; HACK memoize kapp ngrams
+(temp-cached-frequent-ngrams) keykapp-data-load-and-bind
