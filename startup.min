@@ -57,7 +57,11 @@ lambda
 lambda
 
 
-(stack-prompt)
+(
+    stack-prompt
+    temp-cached-frequent-ngrams-from-history-increment
+    kapp-suggestions-do-offer
+)
 (prompt)
 lambda
 
@@ -84,6 +88,7 @@ define
 
 
 (
+    string
     "\n"
     suffix
     print!

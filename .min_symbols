@@ -780,7 +780,6 @@
   ],
   "kapp-sequence-frequent-successor-suggestions": [
     ";sym:quote-map",
-    ";sym:quote",
     [
       ";sym:_kapp-log-tail"
     ],
@@ -895,7 +894,6 @@
     ";sym:define",
     [
       ";sym:last",
-      ";sym:quote",
       ";sym:keypad-switch-names-in-priority-order",
       ";sym:_i",
       ";sym:get",
@@ -1685,7 +1683,6 @@
     ";sym:to-inert-value-seq"
   ],
   "temp-cached-frequent-ngrams-length-filter": [
-    ";sym:quote",
     [
       ";sym:_length"
     ],
