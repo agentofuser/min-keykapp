@@ -58,9 +58,21 @@ lambda
 
 
 (
-    stack-prompt
+    stack-print
     temp-cached-frequent-ngrams-from-history-increment
     kapp-suggestions-do-offer
+    kapp-suggestions-keybindings-listen
+)
+(keykapp-event-loop-run)
+lambda
+
+
+(
+    keykapp-event-loop-run
+    "\n--------------------------------\n[$1]\nλ "
+    (.)
+    apply
+    interpolate
 )
 (prompt)
 lambda
