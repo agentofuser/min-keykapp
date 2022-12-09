@@ -58,6 +58,8 @@ lambda
 
 
 (
+    "\n################################# screen-frame #################################\n"
+    print!
     stack-print
     temp-cached-frequent-ngrams-from-history-increment
     kapp-suggestions-do-offer

@@ -1582,7 +1582,6 @@
   ],
   "stack-wrap": [
     ";sym:get-stack",
-    ";sym:quote",
     [
       ";sym:_stack-prev"
     ],
