@@ -71,10 +71,7 @@ lambda
 
 (
     keykapp-event-loop-run
-    "\n--------------------------------\n[$1]\nλ "
-    (.)
-    apply
-    interpolate
+    "\nλ "
 )
 (prompt)
 lambda
